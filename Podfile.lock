@@ -47,6 +47,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - SideMenu (2.3.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -55,6 +56,7 @@ DEPENDENCIES:
   - GoogleMaps
   - GoogleSignIn
   - SDWebImage (~> 3.8)
+  - SideMenu
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
@@ -69,7 +71,8 @@ SPEC CHECKSUMS:
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 6f8d8b28b7e345549ac471071608170b31cb4977
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SideMenu: 43d092cf615cf472f105c5b9867a21beff9fc269
 
-PODFILE CHECKSUM: 724e28d65e4c17267b12f426b917a5669f60ba58
+PODFILE CHECKSUM: 81f462defaec5b1e229e1c5abe8a464d9a44f427
 
 COCOAPODS: 1.1.1
