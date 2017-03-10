@@ -13,4 +13,5 @@ target 'Book Phui' do
   pod 'GoogleMaps'
   pod 'Alamofire'
   pod 'SideMenu'
+  pod 'iCarousel', '~>1.8.2'
 end
