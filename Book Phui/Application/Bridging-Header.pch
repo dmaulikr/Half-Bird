@@ -1,0 +1,18 @@
+//
+//  Bridging-Header.pch
+//  Book Phui
+//
+//  Created by ThinhND on 3/8/17.
+//  Copyright © 2017 Half Bird. All rights reserved.
+//
+
+#ifndef Bridging_Header_pch
+#define Bridging_Header_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+
+#endif /* Bridging_Header_pch */

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L2y-mo-hoc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="902-ZK-utw">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="L2y-mo-hoc" customClass="LoginViewController" customModule="Book_Phui" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nJl-ts-cg6"/>
+                        <viewControllerLayoutGuide type="bottom" id="jBg-Wb-KYH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YIO-mj-5W6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKv-QM-H3a" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="136" y="87" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login FB"/>
+                                <connections>
+                                    <action selector="btnLoginFBClick:" destination="L2y-mo-hoc" eventType="touchUpInside" id="204-UJ-4UN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFV-uO-cSU">
+                                <rect key="frame" x="136" y="125" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login GG"/>
+                                <connections>
+                                    <action selector="btnLoginGGClick:" destination="L2y-mo-hoc" eventType="touchUpInside" id="ARe-ZM-Z0x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnFBLogin" destination="EKv-QM-H3a" id="027-sQ-7tl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CI3-b8-r8F" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66" y="122"/>
+        </scene>
+    </scenes>
+</document>

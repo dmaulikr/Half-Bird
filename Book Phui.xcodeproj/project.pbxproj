@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
+		FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */; };
+		FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB161E6FB7F4002E30AA /* Assets.xcassets */; };
+		FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB181E6FB7F4002E30AA /* LaunchScreen.storyboard */; };
+		FF23AB4D1E6FE16D002E30AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23AB4C1E6FE16D002E30AA /* Constants.swift */; };
+		FF23AB4F1E700FFD002E30AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB4E1E700FFD002E30AA /* GoogleService-Info.plist */; };
+		FFAC55241E71079A0014B755 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC55231E71079A0014B755 /* LoginViewController.swift */; };
+		FFAC55271E710E750014B755 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAC55251E710E750014B755 /* Login.storyboard */; };
+		FFAC552A1E710EC60014B755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAC55281E710EC60014B755 /* Main.storyboard */; };
+		FFAC552C1E710F9A0014B755 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC552B1E710F9A0014B755 /* MainViewController.swift */; };
+		FFAC592B1E7139100014B755 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAC59271E7139100014B755 /* Bolts.framework */; };
+		FFAC592C1E7139110014B755 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAC59281E7139100014B755 /* FBSDKCoreKit.framework */; };
+		FFAC592D1E7139110014B755 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAC59291E7139100014B755 /* FBSDKLoginKit.framework */; };
+		FFAC592E1E7139110014B755 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAC592A1E7139100014B755 /* FBSDKShareKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
+		9637CEA5FD37CD756EA81017 /* Pods-Book Phui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.debug.xcconfig"; sourceTree = "<group>"; };
+		A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Book_Phui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF23AB0C1E6FB7F4002E30AA /* Book Phui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Phui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF23AB161E6FB7F4002E30AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF23AB191E6FB7F4002E30AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF23AB1B1E6FB7F4002E30AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF23AB271E6FC2B0002E30AA /* Bridging-Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.pch"; sourceTree = "<group>"; };
+		FF23AB281E6FC2C7002E30AA /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		FF23AB4C1E6FE16D002E30AA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FF23AB4E1E700FFD002E30AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FFAC55231E71079A0014B755 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FFAC55261E710E750014B755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		FFAC55291E710EC60014B755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFAC552B1E710F9A0014B755 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FFAC59271E7139100014B755 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		FFAC59281E7139100014B755 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		FFAC59291E7139100014B755 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		FFAC592A1E7139100014B755 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		FFBEF4AA1E723C030027B0B0 /* Book Phui.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Book Phui.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF23AB091E6FB7F4002E30AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */,
+				FFAC592C1E7139110014B755 /* FBSDKCoreKit.framework in Frameworks */,
+				FFAC592E1E7139110014B755 /* FBSDKShareKit.framework in Frameworks */,
+				FFAC592D1E7139110014B755 /* FBSDKLoginKit.framework in Frameworks */,
+				FFAC592B1E7139100014B755 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D11F042B69231AD669A82FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59824DEA6F3966F60022CFDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9637CEA5FD37CD756EA81017 /* Pods-Book Phui.debug.xcconfig */,
+				3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF23AB031E6FB7F4002E30AA = {
+			isa = PBXGroup;
+			children = (
+				FF23AB0E1E6FB7F4002E30AA /* Book Phui */,
+				FF23AB0D1E6FB7F4002E30AA /* Products */,
+				59824DEA6F3966F60022CFDC /* Pods */,
+				1D11F042B69231AD669A82FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF23AB0D1E6FB7F4002E30AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF23AB0C1E6FB7F4002E30AA /* Book Phui.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF23AB0E1E6FB7F4002E30AA /* Book Phui */ = {
+			isa = PBXGroup;
+			children = (
+				FFBEF4AA1E723C030027B0B0 /* Book Phui.entitlements */,
+				FF23AB261E6FC28E002E30AA /* Application */,
+				FF23AB251E6FBA48002E30AA /* Library */,
+				FF23AB2B1E6FC332002E30AA /* Helper */,
+				FF23AB221E6FBA34002E30AA /* ViewControllers */,
+				FF23AB211E6FBA0E002E30AA /* Storyboard */,
+				FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */,
+				FF23AB161E6FB7F4002E30AA /* Assets.xcassets */,
+				FF23AB1B1E6FB7F4002E30AA /* Info.plist */,
+				FF23AB4E1E700FFD002E30AA /* GoogleService-Info.plist */,
+			);
+			path = "Book Phui";
+			sourceTree = "<group>";
+		};
+		FF23AB211E6FBA0E002E30AA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FFAC55281E710EC60014B755 /* Main.storyboard */,
+				FFAC55251E710E750014B755 /* Login.storyboard */,
+				FF23AB181E6FB7F4002E30AA /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		FF23AB221E6FBA34002E30AA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFAC55231E71079A0014B755 /* LoginViewController.swift */,
+				FFAC552B1E710F9A0014B755 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FF23AB251E6FBA48002E30AA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FFAC59271E7139100014B755 /* Bolts.framework */,
+				FFAC59281E7139100014B755 /* FBSDKCoreKit.framework */,
+				FFAC59291E7139100014B755 /* FBSDKLoginKit.framework */,
+				FFAC592A1E7139100014B755 /* FBSDKShareKit.framework */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		FF23AB261E6FC28E002E30AA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FF23AB271E6FC2B0002E30AA /* Bridging-Header.pch */,
+				FF23AB281E6FC2C7002E30AA /* Define.h */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FF23AB2B1E6FC332002E30AA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FF23AB4C1E6FE16D002E30AA /* Constants.swift */,
+				FF23AB2C1E6FC332002E30AA /* Common */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FF23AB2C1E6FC332002E30AA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF23AB0B1E6FB7F4002E30AA /* Book Phui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF23AB1E1E6FB7F4002E30AA /* Build configuration list for PBXNativeTarget "Book Phui" */;
+			buildPhases = (
+				8E9A5CC2A6C612EB0E8E0CEF /* [CP] Check Pods Manifest.lock */,
+				FF23AB081E6FB7F4002E30AA /* Sources */,
+				FF23AB091E6FB7F4002E30AA /* Frameworks */,
+				FF23AB0A1E6FB7F4002E30AA /* Resources */,
+				C3E37DAE24A80288024CF28D /* [CP] Embed Pods Frameworks */,
+				3910A07D2590CA13B4458704 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Book Phui";
+			productName = "Book Phui";
+			productReference = FF23AB0C1E6FB7F4002E30AA /* Book Phui.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF23AB041E6FB7F4002E30AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Half Bird";
+				TargetAttributes = {
+					FF23AB0B1E6FB7F4002E30AA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q34VKJFVAS;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FF23AB071E6FB7F4002E30AA /* Build configuration list for PBXProject "Book Phui" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF23AB031E6FB7F4002E30AA;
+			productRefGroup = FF23AB0D1E6FB7F4002E30AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF23AB0B1E6FB7F4002E30AA /* Book Phui */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF23AB0A1E6FB7F4002E30AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */,
+				FFAC552A1E710EC60014B755 /* Main.storyboard in Resources */,
+				FF23AB4F1E700FFD002E30AA /* GoogleService-Info.plist in Resources */,
+				FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */,
+				FFAC55271E710E750014B755 /* Login.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3910A07D2590CA13B4458704 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E9A5CC2A6C612EB0E8E0CEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C3E37DAE24A80288024CF28D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF23AB081E6FB7F4002E30AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFAC55241E71079A0014B755 /* LoginViewController.swift in Sources */,
+				FF23AB4D1E6FE16D002E30AA /* Constants.swift in Sources */,
+				FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */,
+				FFAC552C1E710F9A0014B755 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF23AB181E6FB7F4002E30AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF23AB191E6FB7F4002E30AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FFAC55251E710E750014B755 /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFAC55261E710E750014B755 /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		FFAC55281E710EC60014B755 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFAC55291E710EC60014B755 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF23AB1C1E6FB7F4002E30AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF23AB1D1E6FB7F4002E30AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF23AB1F1E6FB7F4002E30AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9637CEA5FD37CD756EA81017 /* Pods-Book Phui.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Book Phui/Book Phui.entitlements";
+				DEVELOPMENT_TEAM = Q34VKJFVAS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Book\\ Phui/Library",
+					"$(PROJECT_DIR)/Book\\ Phui/Library",
+					"$(PROJECT_DIR)/Book\\ Phui/Library",
+					"$(PROJECT_DIR)/Book\\ Phui/Library",
+				);
+				INFOPLIST_FILE = "Book Phui/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halfbird.Book-Phui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Book Phui/Application/Bridging-Header.pch";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FF23AB201E6FB7F4002E30AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Book Phui/Book Phui.entitlements";
+				DEVELOPMENT_TEAM = Q34VKJFVAS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
+					"$(PROJECT_DIR)/Book\\ Phui/Library",
+					"$(PROJECT_DIR)/Book\\ Phui/Library",
+					"$(PROJECT_DIR)/Book\\ Phui/Library",
+					"$(PROJECT_DIR)/Book\\ Phui/Library",
+				);
+				INFOPLIST_FILE = "Book Phui/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.halfbird.Book-Phui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Book Phui/Application/Bridging-Header.pch";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF23AB071E6FB7F4002E30AA /* Build configuration list for PBXProject "Book Phui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF23AB1C1E6FB7F4002E30AA /* Debug */,
+				FF23AB1D1E6FB7F4002E30AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF23AB1E1E6FB7F4002E30AA /* Build configuration list for PBXNativeTarget "Book Phui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF23AB1F1E6FB7F4002E30AA /* Debug */,
+				FF23AB201E6FB7F4002E30AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF23AB041E6FB7F4002E30AA /* Project object */;
+}
