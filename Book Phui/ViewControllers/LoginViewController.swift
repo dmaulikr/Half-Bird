@@ -12,7 +12,8 @@ import GoogleSignIn
 
 class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButtonDelegate {
     
-    @IBOutlet weak var btnFBLogin: FBSDKLoginButton!
+    
+    var btnFBLogin: FBSDKLoginButton!
 
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         
@@ -39,6 +40,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
+        self.btnFBLogin = FBSDKLoginButton()
         self.btnFBLogin.delegate = self;
         self.btnFBLogin.readPermissions = ["public_profile", "email", "user_friends"];
         // Do any additional setup after loading the view.
@@ -50,7 +52,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
     }
     
     @IBAction func btnLoginFBClick(_ sender: Any) {
-        
+        self.btnFBLogin.sendActions(for: .touchUpInside)
     }
 
     @IBAction func btnLoginGGClick(_ sender: Any) {
