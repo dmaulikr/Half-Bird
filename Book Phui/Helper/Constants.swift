@@ -29,4 +29,8 @@ struct Constants {
         static let MainViewControllerID = "MainViewController"
         static let LoginViewControllerID = "LoginViewController"
     }
+    
+    struct ConstantsString {
+        static let GoogleMapAPIKey = "AIzaSyCDsnW_PJz4w72JSNMAwZU-ShGv19BFxQ0"
+    }
 }

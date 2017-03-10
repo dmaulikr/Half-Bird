@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tLA-Sy-jbd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tLA-Sy-jbd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,31 +21,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlQ-CX-rCe">
-                                <rect key="frame" x="127" y="93" width="121" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8C-fx-3dC">
-                                <rect key="frame" x="164" y="246" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="logout:" destination="tLA-Sy-jbd" eventType="touchUpInside" id="aCb-NW-x40"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LbI-19-N37">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GlQ-CX-rCe" firstAttribute="top" secondItem="bQP-Ha-DV0" secondAttribute="bottom" constant="73" id="5AS-Os-K1D"/>
-                            <constraint firstItem="GlQ-CX-rCe" firstAttribute="centerX" secondItem="uL2-pj-xls" secondAttribute="centerX" id="b5K-IX-1UJ"/>
+                            <constraint firstAttribute="trailing" secondItem="LbI-19-N37" secondAttribute="trailing" id="Fuy-Nk-evy"/>
+                            <constraint firstItem="DJf-oH-DIZ" firstAttribute="top" secondItem="LbI-19-N37" secondAttribute="bottom" id="l0V-Nt-mao"/>
+                            <constraint firstItem="LbI-19-N37" firstAttribute="leading" secondItem="uL2-pj-xls" secondAttribute="leading" id="x72-rt-r60"/>
+                            <constraint firstItem="LbI-19-N37" firstAttribute="top" secondItem="uL2-pj-xls" secondAttribute="top" id="zGW-Ne-S0W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="LbI-19-N37" id="RQY-nx-Pxl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmi-Fz-3n9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-228" y="143"/>
+            <point key="canvasLocation" x="-228" y="142.57871064467767"/>
         </scene>
     </scenes>
 </document>
