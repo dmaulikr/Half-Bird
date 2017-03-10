@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27C8CBA31E72E31E00FBFB4C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBA11E72E31E00FBFB4C /* SideMenuViewController.swift */; };
+		27C8CBA41E72E31E00FBFB4C /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C8CBA21E72E31E00FBFB4C /* SideMenuViewController.xib */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
 		FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */; };
 		FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB161E6FB7F4002E30AA /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27C8CBA11E72E31E00FBFB4C /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		27C8CBA21E72E31E00FBFB4C /* SideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
 		9637CEA5FD37CD756EA81017 /* Pods-Book Phui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.debug.xcconfig"; sourceTree = "<group>"; };
 		A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Book_Phui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +73,15 @@
 				A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27C8CBA51E72E33E00FBFB4C /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				27C8CBA11E72E31E00FBFB4C /* SideMenuViewController.swift */,
+				27C8CBA21E72E31E00FBFB4C /* SideMenuViewController.xib */,
+			);
+			name = SideMenu;
 			sourceTree = "<group>";
 		};
 		59824DEA6F3966F60022CFDC /* Pods */ = {
@@ -128,6 +141,7 @@
 		FF23AB221E6FBA34002E30AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				27C8CBA51E72E33E00FBFB4C /* SideMenu */,
 				FFAC55231E71079A0014B755 /* LoginViewController.swift */,
 				FFAC552B1E710F9A0014B755 /* MainViewController.swift */,
 			);
@@ -240,6 +254,7 @@
 			files = (
 				FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */,
 				FFAC552A1E710EC60014B755 /* Main.storyboard in Resources */,
+				27C8CBA41E72E31E00FBFB4C /* SideMenuViewController.xib in Resources */,
 				FF23AB4F1E700FFD002E30AA /* GoogleService-Info.plist in Resources */,
 				FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */,
 				FFAC55271E710E750014B755 /* Login.storyboard in Resources */,
@@ -304,6 +319,7 @@
 				FFAC55241E71079A0014B755 /* LoginViewController.swift in Sources */,
 				FF23AB4D1E6FE16D002E30AA /* Constants.swift in Sources */,
 				FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */,
+				27C8CBA31E72E31E00FBFB4C /* SideMenuViewController.swift in Sources */,
 				FFAC552C1E710F9A0014B755 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
