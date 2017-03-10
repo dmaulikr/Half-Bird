@@ -12,4 +12,5 @@ target 'Book Phui' do
   pod 'SDWebImage', '~>3.8'
   pod 'GoogleMaps'
   pod 'Alamofire'
+  pod 'SideMenu'
 end
