@@ -11,5 +11,5 @@ target 'Book Phui' do
   pod 'GoogleSignIn'
   pod 'SDWebImage', '~>3.8'
   pod 'GoogleMaps'
-
+  pod 'Alamofire'
 end
