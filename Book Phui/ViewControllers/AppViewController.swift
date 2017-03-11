@@ -17,7 +17,7 @@ class AppViewController: UIViewController {
     }
     
     func configSideMenu() {
-        let sideMenu = UIViewController(nibName: String(describing: SideMenuViewController.self), bundle: nil)
+        let sideMenu = SideMenuViewController(nibName: String(describing: SideMenuViewController.self), bundle: nil)
         
         let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: sideMenu)
         menuLeftNavigationController.leftSide = true
