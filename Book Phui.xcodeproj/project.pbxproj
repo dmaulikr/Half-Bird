@@ -22,6 +22,10 @@
 		27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C8CBC11E73AAF600FBFB4C /* HistoryViewCell.xib */; };
 		27C8CBC51E73B03100FBFB4C /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBC41E73B03100FBFB4C /* DateHelper.swift */; };
 		27DFEACC1E73CAF60000B782 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEACB1E73CAF60000B782 /* Util.swift */; };
+		27DFEAD01E73CF7A0000B782 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEACE1E73CF7A0000B782 /* BookingViewController.swift */; };
+		27DFEAD11E73CF7A0000B782 /* BookingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEACF1E73CF7A0000B782 /* BookingViewController.xib */; };
+		27DFEAD51E73D2540000B782 /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAD31E73D2540000B782 /* SearchingViewController.swift */; };
+		27DFEAD61E73D2540000B782 /* SearchingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAD41E73D2540000B782 /* SearchingViewController.xib */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
 		5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4414D71E739F0000015F1C /* FieldDetailVC.swift */; };
 		5F4414DA1E739F0000015F1C /* FieldDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4414D81E739F0000015F1C /* FieldDetailVC.xib */; };
@@ -56,6 +60,10 @@
 		27C8CBC11E73AAF600FBFB4C /* HistoryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewCell.xib; sourceTree = "<group>"; };
 		27C8CBC41E73B03100FBFB4C /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		27DFEACB1E73CAF60000B782 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		27DFEACE1E73CF7A0000B782 /* BookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		27DFEACF1E73CF7A0000B782 /* BookingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingViewController.xib; sourceTree = "<group>"; };
+		27DFEAD31E73D2540000B782 /* SearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
+		27DFEAD41E73D2540000B782 /* SearchingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchingViewController.xib; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
 		5F4414D71E739F0000015F1C /* FieldDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldDetailVC.swift; sourceTree = "<group>"; };
 		5F4414D81E739F0000015F1C /* FieldDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldDetailVC.xib; sourceTree = "<group>"; };
@@ -136,6 +144,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		27DFEACD1E73CF590000B782 /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				27DFEACE1E73CF7A0000B782 /* BookingViewController.swift */,
+				27DFEACF1E73CF7A0000B782 /* BookingViewController.xib */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		27DFEAD21E73D1AF0000B782 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				27DFEAD31E73D2540000B782 /* SearchingViewController.swift */,
+				27DFEAD41E73D2540000B782 /* SearchingViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		59824DEA6F3966F60022CFDC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +229,8 @@
 		FF23AB221E6FBA34002E30AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				27DFEAD21E73D1AF0000B782 /* Search */,
+				27DFEACD1E73CF590000B782 /* Booking */,
 				27C8CBB81E73A44500FBFB4C /* History */,
 				27C8CBA51E72E33E00FBFB4C /* SideMenu */,
 				5F4414D61E739F0000015F1C /* FieldDetailVC */,
@@ -328,9 +356,11 @@
 				27C8CBB71E73A44000FBFB4C /* HistoryViewController.xib in Resources */,
 				27C8CBA41E72E31E00FBFB4C /* SideMenuViewController.xib in Resources */,
 				FF23AB4F1E700FFD002E30AA /* GoogleService-Info.plist in Resources */,
+				27DFEAD61E73D2540000B782 /* SearchingViewController.xib in Resources */,
 				FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */,
 				FFAC55271E710E750014B755 /* Login.storyboard in Resources */,
 				27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */,
+				27DFEAD11E73CF7A0000B782 /* BookingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +422,7 @@
 				27C8CBC21E73AAF600FBFB4C /* HistoryViewCell.swift in Sources */,
 				FFAC55241E71079A0014B755 /* LoginViewController.swift in Sources */,
 				FF23AB4D1E6FE16D002E30AA /* Constants.swift in Sources */,
+				27DFEAD51E73D2540000B782 /* SearchingViewController.swift in Sources */,
 				27DFEACC1E73CAF60000B782 /* Util.swift in Sources */,
 				27C8CBBD1E73AA4800FBFB4C /* Transaction.swift in Sources */,
 				27C8CBAD1E72E5B800FBFB4C /* UIView_Borders.swift in Sources */,
@@ -400,6 +431,7 @@
 				27C8CBAB1E72E5B000FBFB4C /* UIAvatar.swift in Sources */,
 				5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */,
 				FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */,
+				27DFEAD01E73CF7A0000B782 /* BookingViewController.swift in Sources */,
 				27C8CBA31E72E31E00FBFB4C /* SideMenuViewController.swift in Sources */,
 				27C8CBBB1E73A97300FBFB4C /* Stadium.swift in Sources */,
 				27C8CBB31E73945700FBFB4C /* AppViewController.swift in Sources */,
