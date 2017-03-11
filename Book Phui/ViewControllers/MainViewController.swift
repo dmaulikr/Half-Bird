@@ -10,8 +10,9 @@ import UIKit
 import FirebaseAuth
 import GoogleSignIn
 import GoogleMaps
+import SideMenu
 
-class MainViewController: UIViewController, GMSMapViewDelegate, ListFieldDelegate {
+class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelegate {
 
     @IBOutlet weak var listView: UIView!
     @IBOutlet weak var contraintTableTop: NSLayoutConstraint!
@@ -94,6 +95,11 @@ class MainViewController: UIViewController, GMSMapViewDelegate, ListFieldDelegat
         self.mapView.addConstraint(NSLayoutConstraint(item: map, attribute: .width, relatedBy: .equal, toItem: self.mapView, attribute: .width, multiplier: 1.0, constant: 0))
         
         self.mapView.addConstraint(NSLayoutConstraint(item: map, attribute: .height, relatedBy: .equal, toItem: self.mapView, attribute: .height, multiplier: 1, constant: 0))
+    }
+    
+    @IBAction func btnMenuClick(_ sender: Any) {
+        
+        self.present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
     }
     
     /*

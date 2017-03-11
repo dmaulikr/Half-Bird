@@ -11,11 +11,23 @@
 		27C8CBA41E72E31E00FBFB4C /* SideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C8CBA21E72E31E00FBFB4C /* SideMenuViewController.xib */; };
 		27C8CBAB1E72E5B000FBFB4C /* UIAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBAA1E72E5B000FBFB4C /* UIAvatar.swift */; };
 		27C8CBAD1E72E5B800FBFB4C /* UIView_Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBAC1E72E5B800FBFB4C /* UIView_Borders.swift */; };
+		27C8CBB01E72E90E00FBFB4C /* SideMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBAE1E72E90E00FBFB4C /* SideMenuViewCell.swift */; };
+		27C8CBB11E72E90E00FBFB4C /* SideMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C8CBAF1E72E90E00FBFB4C /* SideMenuViewCell.xib */; };
+		27C8CBB31E73945700FBFB4C /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBB21E73945700FBFB4C /* AppViewController.swift */; };
+		27C8CBB61E73A44000FBFB4C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBB41E73A44000FBFB4C /* HistoryViewController.swift */; };
+		27C8CBB71E73A44000FBFB4C /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C8CBB51E73A44000FBFB4C /* HistoryViewController.xib */; };
+		27C8CBBB1E73A97300FBFB4C /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBBA1E73A97300FBFB4C /* Stadium.swift */; };
+		27C8CBBD1E73AA4800FBFB4C /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBBC1E73AA4800FBFB4C /* Transaction.swift */; };
+		27C8CBC21E73AAF600FBFB4C /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBC01E73AAF600FBFB4C /* HistoryViewCell.swift */; };
+		27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C8CBC11E73AAF600FBFB4C /* HistoryViewCell.xib */; };
+		27C8CBC51E73B03100FBFB4C /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBC41E73B03100FBFB4C /* DateHelper.swift */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
-		403F59551E739B7900277908 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F59541E739B7900277908 /* LocationManager.swift */; };
-		403F59571E73A27700277908 /* ListFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F59561E73A27700277908 /* ListFieldViewController.swift */; };
-		403F595D1E73A36000277908 /* FieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F595B1E73A36000277908 /* FieldCell.swift */; };
-		403F595E1E73A36000277908 /* FieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403F595C1E73A36000277908 /* FieldCell.xib */; };
+		403F596C1E73CEDF00277908 /* FieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F59691E73CEDF00277908 /* FieldCell.swift */; };
+		403F596D1E73CEDF00277908 /* FieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403F596A1E73CEDF00277908 /* FieldCell.xib */; };
+		403F596E1E73CEDF00277908 /* ListFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F596B1E73CEDF00277908 /* ListFieldViewController.swift */; };
+		403F59701E73CF0A00277908 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F596F1E73CF0A00277908 /* LocationManager.swift */; };
+		5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4414D71E739F0000015F1C /* FieldDetailVC.swift */; };
+		5F4414DA1E739F0000015F1C /* FieldDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4414D81E739F0000015F1C /* FieldDetailVC.xib */; };
 		FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */; };
 		FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB161E6FB7F4002E30AA /* Assets.xcassets */; };
 		FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB181E6FB7F4002E30AA /* LaunchScreen.storyboard */; };
@@ -36,11 +48,23 @@
 		27C8CBA21E72E31E00FBFB4C /* SideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewController.xib; sourceTree = "<group>"; };
 		27C8CBAA1E72E5B000FBFB4C /* UIAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAvatar.swift; sourceTree = "<group>"; };
 		27C8CBAC1E72E5B800FBFB4C /* UIView_Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Borders.swift; sourceTree = "<group>"; };
+		27C8CBAE1E72E90E00FBFB4C /* SideMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewCell.swift; sourceTree = "<group>"; };
+		27C8CBAF1E72E90E00FBFB4C /* SideMenuViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewCell.xib; sourceTree = "<group>"; };
+		27C8CBB21E73945700FBFB4C /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		27C8CBB41E73A44000FBFB4C /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		27C8CBB51E73A44000FBFB4C /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		27C8CBBA1E73A97300FBFB4C /* Stadium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
+		27C8CBBC1E73AA4800FBFB4C /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		27C8CBC01E73AAF600FBFB4C /* HistoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
+		27C8CBC11E73AAF600FBFB4C /* HistoryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewCell.xib; sourceTree = "<group>"; };
+		27C8CBC41E73B03100FBFB4C /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
-		403F59541E739B7900277908 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		403F59561E73A27700277908 /* ListFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFieldViewController.swift; sourceTree = "<group>"; };
-		403F595B1E73A36000277908 /* FieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldCell.swift; sourceTree = "<group>"; };
-		403F595C1E73A36000277908 /* FieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldCell.xib; sourceTree = "<group>"; };
+		403F59691E73CEDF00277908 /* FieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldCell.swift; sourceTree = "<group>"; };
+		403F596A1E73CEDF00277908 /* FieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldCell.xib; sourceTree = "<group>"; };
+		403F596B1E73CEDF00277908 /* ListFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFieldViewController.swift; sourceTree = "<group>"; };
+		403F596F1E73CF0A00277908 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5F4414D71E739F0000015F1C /* FieldDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldDetailVC.swift; sourceTree = "<group>"; };
+		5F4414D81E739F0000015F1C /* FieldDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldDetailVC.xib; sourceTree = "<group>"; };
 		9637CEA5FD37CD756EA81017 /* Pods-Book Phui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.debug.xcconfig"; sourceTree = "<group>"; };
 		A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Book_Phui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF23AB0C1E6FB7F4002E30AA /* Book Phui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Phui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,15 +116,37 @@
 			children = (
 				27C8CBA11E72E31E00FBFB4C /* SideMenuViewController.swift */,
 				27C8CBA21E72E31E00FBFB4C /* SideMenuViewController.xib */,
+				27C8CBAE1E72E90E00FBFB4C /* SideMenuViewCell.swift */,
+				27C8CBAF1E72E90E00FBFB4C /* SideMenuViewCell.xib */,
 			);
 			name = SideMenu;
 			sourceTree = "<group>";
 		};
-		403F595A1E73A34E00277908 /* FieldCell */ = {
+		27C8CBB81E73A44500FBFB4C /* History */ = {
 			isa = PBXGroup;
 			children = (
-				403F595B1E73A36000277908 /* FieldCell.swift */,
-				403F595C1E73A36000277908 /* FieldCell.xib */,
+				27C8CBB41E73A44000FBFB4C /* HistoryViewController.swift */,
+				27C8CBB51E73A44000FBFB4C /* HistoryViewController.xib */,
+				27C8CBC01E73AAF600FBFB4C /* HistoryViewCell.swift */,
+				27C8CBC11E73AAF600FBFB4C /* HistoryViewCell.xib */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		27C8CBB91E73A92D00FBFB4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27C8CBBA1E73A97300FBFB4C /* Stadium.swift */,
+				27C8CBBC1E73AA4800FBFB4C /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		403F59681E73CEDF00277908 /* FieldCell */ = {
+			isa = PBXGroup;
+			children = (
+				403F59691E73CEDF00277908 /* FieldCell.swift */,
+				403F596A1E73CEDF00277908 /* FieldCell.xib */,
 			);
 			path = FieldCell;
 			sourceTree = "<group>";
@@ -112,6 +158,15 @@
 				3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F4414D61E739F0000015F1C /* FieldDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				5F4414D71E739F0000015F1C /* FieldDetailVC.swift */,
+				5F4414D81E739F0000015F1C /* FieldDetailVC.xib */,
+			);
+			path = FieldDetailVC;
 			sourceTree = "<group>";
 		};
 		FF23AB031E6FB7F4002E30AA = {
@@ -138,6 +193,7 @@
 				FFBEF4AA1E723C030027B0B0 /* Book Phui.entitlements */,
 				FF23AB261E6FC28E002E30AA /* Application */,
 				FF23AB251E6FBA48002E30AA /* Library */,
+				27C8CBB91E73A92D00FBFB4C /* Model */,
 				FF23AB2B1E6FC332002E30AA /* Helper */,
 				FF23AB221E6FBA34002E30AA /* ViewControllers */,
 				FF23AB211E6FBA0E002E30AA /* Storyboard */,
@@ -162,11 +218,14 @@
 		FF23AB221E6FBA34002E30AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				403F595A1E73A34E00277908 /* FieldCell */,
+				27C8CBB81E73A44500FBFB4C /* History */,
 				27C8CBA51E72E33E00FBFB4C /* SideMenu */,
+				5F4414D61E739F0000015F1C /* FieldDetailVC */,
+				403F59681E73CEDF00277908 /* FieldCell */,
 				FFAC55231E71079A0014B755 /* LoginViewController.swift */,
 				FFAC552B1E710F9A0014B755 /* MainViewController.swift */,
-				403F59561E73A27700277908 /* ListFieldViewController.swift */,
+				27C8CBB21E73945700FBFB4C /* AppViewController.swift */,
+				403F596B1E73CEDF00277908 /* ListFieldViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -194,11 +253,12 @@
 		FF23AB2B1E6FC332002E30AA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				FF23AB2C1E6FC332002E30AA /* Common */,
+				403F596F1E73CF0A00277908 /* LocationManager.swift */,
+				27C8CBC41E73B03100FBFB4C /* DateHelper.swift */,
 				FF23AB4C1E6FE16D002E30AA /* Constants.swift */,
 				27C8CBAA1E72E5B000FBFB4C /* UIAvatar.swift */,
 				27C8CBAC1E72E5B800FBFB4C /* UIView_Borders.swift */,
-				403F59541E739B7900277908 /* LocationManager.swift */,
+				FF23AB2C1E6FC332002E30AA /* Common */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -280,11 +340,15 @@
 			files = (
 				FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */,
 				FFAC552A1E710EC60014B755 /* Main.storyboard in Resources */,
+				5F4414DA1E739F0000015F1C /* FieldDetailVC.xib in Resources */,
+				27C8CBB11E72E90E00FBFB4C /* SideMenuViewCell.xib in Resources */,
+				403F596D1E73CEDF00277908 /* FieldCell.xib in Resources */,
+				27C8CBB71E73A44000FBFB4C /* HistoryViewController.xib in Resources */,
 				27C8CBA41E72E31E00FBFB4C /* SideMenuViewController.xib in Resources */,
 				FF23AB4F1E700FFD002E30AA /* GoogleService-Info.plist in Resources */,
 				FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */,
-				403F595E1E73A36000277908 /* FieldCell.xib in Resources */,
 				FFAC55271E710E750014B755 /* Login.storyboard in Resources */,
+				27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,15 +407,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C8CBC21E73AAF600FBFB4C /* HistoryViewCell.swift in Sources */,
+				403F596E1E73CEDF00277908 /* ListFieldViewController.swift in Sources */,
 				FFAC55241E71079A0014B755 /* LoginViewController.swift in Sources */,
 				FF23AB4D1E6FE16D002E30AA /* Constants.swift in Sources */,
+				27C8CBBD1E73AA4800FBFB4C /* Transaction.swift in Sources */,
 				27C8CBAD1E72E5B800FBFB4C /* UIView_Borders.swift in Sources */,
-				403F59571E73A27700277908 /* ListFieldViewController.swift in Sources */,
+				27C8CBC51E73B03100FBFB4C /* DateHelper.swift in Sources */,
+				27C8CBB61E73A44000FBFB4C /* HistoryViewController.swift in Sources */,
+				403F59701E73CF0A00277908 /* LocationManager.swift in Sources */,
 				27C8CBAB1E72E5B000FBFB4C /* UIAvatar.swift in Sources */,
-				403F59551E739B7900277908 /* LocationManager.swift in Sources */,
+				5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */,
 				FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */,
 				27C8CBA31E72E31E00FBFB4C /* SideMenuViewController.swift in Sources */,
-				403F595D1E73A36000277908 /* FieldCell.swift in Sources */,
+				27C8CBBB1E73A97300FBFB4C /* Stadium.swift in Sources */,
+				27C8CBB31E73945700FBFB4C /* AppViewController.swift in Sources */,
+				27C8CBB01E72E90E00FBFB4C /* SideMenuViewCell.swift in Sources */,
+				403F596C1E73CEDF00277908 /* FieldCell.swift in Sources */,
 				FFAC552C1E710F9A0014B755 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
