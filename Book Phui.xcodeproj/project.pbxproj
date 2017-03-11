@@ -27,10 +27,12 @@
 		27DFEAD91E73E23B0000B782 /* StadiumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */; };
 		27DFEADA1E73E23B0000B782 /* StadiumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAD81E73E23B0000B782 /* StadiumViewCell.xib */; };
 		27DFEADC1E7406930000B782 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEADB1E7406930000B782 /* Api.swift */; };
-		27DFEADF1E74106C0000B782 /* 001.js in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEADE1E74106C0000B782 /* 001.js */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
 		4002BCAE1E73E1EC0037B5E3 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */; };
 		4002BCAF1E73E1EC0037B5E3 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */; };
+		4002BCB31E7438B20037B5E3 /* 001.json in Resources */ = {isa = PBXBuildFile; fileRef = 4002BCB21E7438B20037B5E3 /* 001.json */; };
+		4002BCB71E74439C0037B5E3 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002BCB51E74439C0037B5E3 /* TimeCell.swift */; };
+		4002BCB81E74439C0037B5E3 /* TimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4002BCB61E74439C0037B5E3 /* TimeCell.xib */; };
 		403F596C1E73CEDF00277908 /* FieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F59691E73CEDF00277908 /* FieldCell.swift */; };
 		403F596D1E73CEDF00277908 /* FieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403F596A1E73CEDF00277908 /* FieldCell.xib */; };
 		403F596E1E73CEDF00277908 /* ListFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F596B1E73CEDF00277908 /* ListFieldViewController.swift */; };
@@ -75,10 +77,12 @@
 		27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StadiumViewCell.swift; sourceTree = "<group>"; };
 		27DFEAD81E73E23B0000B782 /* StadiumViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StadiumViewCell.xib; sourceTree = "<group>"; };
 		27DFEADB1E7406930000B782 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		27DFEADE1E74106C0000B782 /* 001.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 001.js; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
 		4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
+		4002BCB21E7438B20037B5E3 /* 001.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 001.json; sourceTree = "<group>"; };
+		4002BCB51E74439C0037B5E3 /* TimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		4002BCB61E74439C0037B5E3 /* TimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeCell.xib; sourceTree = "<group>"; };
 		403F59691E73CEDF00277908 /* FieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldCell.swift; sourceTree = "<group>"; };
 		403F596A1E73CEDF00277908 /* FieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldCell.xib; sourceTree = "<group>"; };
 		403F596B1E73CEDF00277908 /* ListFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFieldViewController.swift; sourceTree = "<group>"; };
@@ -178,9 +182,18 @@
 		27DFEADD1E74104D0000B782 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				27DFEADE1E74106C0000B782 /* 001.js */,
+				4002BCB21E7438B20037B5E3 /* 001.json */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		4002BCB41E74439C0037B5E3 /* TimeCell */ = {
+			isa = PBXGroup;
+			children = (
+				4002BCB51E74439C0037B5E3 /* TimeCell.swift */,
+				4002BCB61E74439C0037B5E3 /* TimeCell.xib */,
+			);
+			path = TimeCell;
 			sourceTree = "<group>";
 		};
 		403F59681E73CEDF00277908 /* FieldCell */ = {
@@ -213,7 +226,7 @@
 		5F4414D61E739F0000015F1C /* FieldDetailVC */ = {
 			isa = PBXGroup;
 			children = (
-				5FEB39ED1E7443C700599F84 /* TimeCell */,
+				4002BCB41E74439C0037B5E3 /* TimeCell */,
 				5F4414D71E739F0000015F1C /* FieldDetailVC.swift */,
 				5F4414D81E739F0000015F1C /* FieldDetailVC.xib */,
 			);
@@ -370,7 +383,7 @@
 				TargetAttributes = {
 					FF23AB0B1E6FB7F4002E30AA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = F8H3R7T3ZF;
+						DevelopmentTeam = Q34VKJFVAS;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -403,7 +416,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27DFEADF1E74106C0000B782 /* 001.js in Resources */,
 				27DFEADA1E73E23B0000B782 /* StadiumViewCell.xib in Resources */,
 				FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */,
 				FFAC552A1E710EC60014B755 /* Main.storyboard in Resources */,
@@ -413,9 +425,10 @@
 				27C8CBB71E73A44000FBFB4C /* HistoryViewController.xib in Resources */,
 				27C8CBA41E72E31E00FBFB4C /* SideMenuViewController.xib in Resources */,
 				FF23AB4F1E700FFD002E30AA /* GoogleService-Info.plist in Resources */,
+				4002BCB31E7438B20037B5E3 /* 001.json in Resources */,
 				27DFEAD61E73D2540000B782 /* SearchingViewController.xib in Resources */,
 				FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */,
-				5FEB39F11E7443C700599F84 /* TimeCell.xib in Resources */,
+				4002BCB81E74439C0037B5E3 /* TimeCell.xib in Resources */,
 				FFAC55271E710E750014B755 /* Login.storyboard in Resources */,
 				27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */,
 				4002BCAF1E73E1EC0037B5E3 /* PaymentViewController.xib in Resources */,
@@ -477,7 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FEB39F01E7443C700599F84 /* TimeCell.swift in Sources */,
+				4002BCB71E74439C0037B5E3 /* TimeCell.swift in Sources */,
 				27C8CBC21E73AAF600FBFB4C /* HistoryViewCell.swift in Sources */,
 				403F596E1E73CEDF00277908 /* ListFieldViewController.swift in Sources */,
 				4002BCAE1E73E1EC0037B5E3 /* PaymentViewController.swift in Sources */,
@@ -633,7 +646,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Book Phui/Book Phui.entitlements";
-				DEVELOPMENT_TEAM = F8H3R7T3ZF;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q34VKJFVAS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Book\\ Phui/Library",
@@ -658,7 +672,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Book Phui/Book Phui.entitlements";
-				DEVELOPMENT_TEAM = F8H3R7T3ZF;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q34VKJFVAS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",

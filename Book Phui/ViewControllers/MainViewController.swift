@@ -42,7 +42,7 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         self.tfSearch.delegate = self
         self.tfSearch.superview?.superview?.clipsToBounds = true
         self.btnTimeSearch.superview?.superview?.clipsToBounds = true
-        
+        self.updateData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,13 +54,15 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
     }
     
     func updateData() {
-        self.getData()
         self.clearMarker()
-        for stadium in stadiums {
-            let position = CLLocationCoordinate2D(latitude: stadium.lat, longitude: stadium.lng)
-            let marker = GMSMarker(position: position)
-            marker.title = stadium.name
-            marker.map = self.map
+        Api.getAroundStadiums { (stadiums) in
+            for stadium in stadiums {
+                let position = CLLocationCoordinate2D(latitude: stadium.lat, longitude: stadium.lng)
+                let marker = GMSMarker(position: position)
+                marker.title = stadium.name
+                marker.map = self.map
+            }
+            self.listFieldVC.updateData(arrStadium: stadiums)
         }
     }
 
