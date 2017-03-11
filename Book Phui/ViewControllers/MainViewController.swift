@@ -61,6 +61,11 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         })
     }
     
+    func didSelectItem() {
+        let vc = FieldDetailVC(nibName: "FieldDetailVC", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     // MARK: - Setup Map
     func setupMap(){
         self.view.layoutIfNeeded()

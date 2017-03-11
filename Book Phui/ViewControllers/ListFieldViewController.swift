@@ -11,6 +11,7 @@ import UIKit
 protocol ListFieldDelegate {
     func didScrollUp()
     func didScrollDown()
+    func didSelectItem()
 }
 
 class ListFieldViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -43,6 +44,10 @@ class ListFieldViewController: UIViewController, UITableViewDataSource, UITableV
         let cell = self.tableView.dequeueReusableCell(withIdentifier: Constants.StoryBoardID.FieldCellID) as! FieldCell
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.delegate.didSelectItem()
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
