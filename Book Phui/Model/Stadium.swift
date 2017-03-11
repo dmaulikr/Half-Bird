@@ -31,4 +31,15 @@ class Stadium: EVObject {
         "18:00-20:00",
         "20:00-22:00",
     ]
+    
+    static var arrayStatus: [Int] = [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+    ]
 }

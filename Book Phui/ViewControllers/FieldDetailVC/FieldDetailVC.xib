@@ -314,7 +314,7 @@
                                         <outlet property="delegate" destination="-1" id="BrR-ex-pJV"/>
                                     </connections>
                                 </collectionView>
-                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByT-3E-ahC">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByT-3E-ahC">
                                     <rect key="frame" x="144" y="511" width="88" height="30"/>
                                     <color key="backgroundColor" red="0.13725490196078433" green="0.65490196078431373" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
