@@ -356,7 +356,7 @@
 				TargetAttributes = {
 					FF23AB0B1E6FB7F4002E30AA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Q34VKJFVAS;
+						DevelopmentTeam = F8H3R7T3ZF;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -617,7 +617,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Book Phui/Book Phui.entitlements";
-				DEVELOPMENT_TEAM = Q34VKJFVAS;
+				DEVELOPMENT_TEAM = F8H3R7T3ZF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Book\\ Phui/Library",
@@ -642,7 +642,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Book Phui/Book Phui.entitlements";
-				DEVELOPMENT_TEAM = Q34VKJFVAS;
+				DEVELOPMENT_TEAM = F8H3R7T3ZF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
