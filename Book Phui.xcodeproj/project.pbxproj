@@ -39,6 +39,8 @@
 		403F59701E73CF0A00277908 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F596F1E73CF0A00277908 /* LocationManager.swift */; };
 		5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4414D71E739F0000015F1C /* FieldDetailVC.swift */; };
 		5F4414DA1E739F0000015F1C /* FieldDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4414D81E739F0000015F1C /* FieldDetailVC.xib */; };
+		5FEB39F01E7443C700599F84 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB39EE1E7443C700599F84 /* TimeCell.swift */; };
+		5FEB39F11E7443C700599F84 /* TimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB39EF1E7443C700599F84 /* TimeCell.xib */; };
 		FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */; };
 		FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB161E6FB7F4002E30AA /* Assets.xcassets */; };
 		FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB181E6FB7F4002E30AA /* LaunchScreen.storyboard */; };
@@ -87,6 +89,8 @@
 		403F596F1E73CF0A00277908 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5F4414D71E739F0000015F1C /* FieldDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldDetailVC.swift; sourceTree = "<group>"; };
 		5F4414D81E739F0000015F1C /* FieldDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldDetailVC.xib; sourceTree = "<group>"; };
+		5FEB39EE1E7443C700599F84 /* TimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		5FEB39EF1E7443C700599F84 /* TimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeCell.xib; sourceTree = "<group>"; };
 		9637CEA5FD37CD756EA81017 /* Pods-Book Phui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.debug.xcconfig"; sourceTree = "<group>"; };
 		A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Book_Phui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF23AB0C1E6FB7F4002E30AA /* Book Phui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Phui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,6 +231,15 @@
 				5F4414D81E739F0000015F1C /* FieldDetailVC.xib */,
 			);
 			path = FieldDetailVC;
+			sourceTree = "<group>";
+		};
+		5FEB39ED1E7443C700599F84 /* TimeCell */ = {
+			isa = PBXGroup;
+			children = (
+				5FEB39EE1E7443C700599F84 /* TimeCell.swift */,
+				5FEB39EF1E7443C700599F84 /* TimeCell.xib */,
+			);
+			path = TimeCell;
 			sourceTree = "<group>";
 		};
 		FF23AB031E6FB7F4002E30AA = {
