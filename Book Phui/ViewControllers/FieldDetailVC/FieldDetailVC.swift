@@ -20,7 +20,7 @@ class FieldDetailVC: UIViewController, UICollectionViewDataSource, UICollectionV
     
     let today = Date()
     let formatter = DateFormatter()
-    var stadium: Stadium?
+    var stadium: Stadium? 
     
     override func viewDidLoad() {
         super.viewDidLoad()
