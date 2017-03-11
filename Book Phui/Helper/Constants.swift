@@ -10,6 +10,10 @@ import Foundation
 
 struct Constants {
 
+    static let selectedColor: UIColor = UIColor(red: 36 / 255.0, green: 167 / 255.0, blue: 10 / 255.0, alpha: 1)
+    static let deselectedColor: UIColor = UIColor(red: 197 / 255.0, green: 197 / 255.0, blue: 197 / 255.0, alpha: 1)
+    static let deselectedBrightColor: UIColor = UIColor(red: 235 / 255.0, green: 235 / 255.0, blue: 235 / 255.0, alpha: 1)
+    
 	struct Network {
         static let baseUrl = NSURL(string: "https://api.github.com")!
         static let AuthTokenName = "Authorization"

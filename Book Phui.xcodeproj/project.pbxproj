@@ -27,6 +27,11 @@
 		27DFEAD91E73E23B0000B782 /* StadiumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */; };
 		27DFEADA1E73E23B0000B782 /* StadiumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAD81E73E23B0000B782 /* StadiumViewCell.xib */; };
 		27DFEADC1E7406930000B782 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEADB1E7406930000B782 /* Api.swift */; };
+		27DFEADF1E74106C0000B782 /* 001.js in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEADE1E74106C0000B782 /* 001.js */; };
+		27DFEAE21E744B9D0000B782 /* AddServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAE01E744B9D0000B782 /* AddServiceCollectionViewCell.swift */; };
+		27DFEAE31E744B9D0000B782 /* AddServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAE11E744B9D0000B782 /* AddServiceCollectionViewCell.xib */; };
+		27DFEAE51E745DD20000B782 /* AppTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAE41E745DD20000B782 /* AppTextView.swift */; };
+		27DFEAE71E7468020000B782 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAE61E7468020000B782 /* AppTextField.swift */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
 		4002BCAE1E73E1EC0037B5E3 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */; };
 		4002BCAF1E73E1EC0037B5E3 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */; };
@@ -77,6 +82,11 @@
 		27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StadiumViewCell.swift; sourceTree = "<group>"; };
 		27DFEAD81E73E23B0000B782 /* StadiumViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StadiumViewCell.xib; sourceTree = "<group>"; };
 		27DFEADB1E7406930000B782 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		27DFEADE1E74106C0000B782 /* 001.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 001.js; sourceTree = "<group>"; };
+		27DFEAE01E744B9D0000B782 /* AddServiceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		27DFEAE11E744B9D0000B782 /* AddServiceCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddServiceCollectionViewCell.xib; sourceTree = "<group>"; };
+		27DFEAE41E745DD20000B782 /* AppTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextView.swift; sourceTree = "<group>"; };
+		27DFEAE61E7468020000B782 /* AppTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
 		4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
@@ -208,8 +218,12 @@
 		403F59711E73DF4B00277908 /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				27DFEAE41E745DD20000B782 /* AppTextView.swift */,
+				27DFEAE61E7468020000B782 /* AppTextField.swift */,
 				4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */,
 				4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */,
+				27DFEAE01E744B9D0000B782 /* AddServiceCollectionViewCell.swift */,
+				27DFEAE11E744B9D0000B782 /* AddServiceCollectionViewCell.xib */,
 			);
 			path = Payment;
 			sourceTree = "<group>";
@@ -419,6 +433,7 @@
 				27DFEADA1E73E23B0000B782 /* StadiumViewCell.xib in Resources */,
 				FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */,
 				FFAC552A1E710EC60014B755 /* Main.storyboard in Resources */,
+				27DFEAE31E744B9D0000B782 /* AddServiceCollectionViewCell.xib in Resources */,
 				5F4414DA1E739F0000015F1C /* FieldDetailVC.xib in Resources */,
 				27C8CBB11E72E90E00FBFB4C /* SideMenuViewCell.xib in Resources */,
 				403F596D1E73CEDF00277908 /* FieldCell.xib in Resources */,
@@ -505,8 +520,10 @@
 				27DFEAD91E73E23B0000B782 /* StadiumViewCell.swift in Sources */,
 				403F59701E73CF0A00277908 /* LocationManager.swift in Sources */,
 				27C8CBAB1E72E5B000FBFB4C /* UIAvatar.swift in Sources */,
+				27DFEAE21E744B9D0000B782 /* AddServiceCollectionViewCell.swift in Sources */,
 				5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */,
 				FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */,
+				27DFEAE71E7468020000B782 /* AppTextField.swift in Sources */,
 				27C8CBA31E72E31E00FBFB4C /* SideMenuViewController.swift in Sources */,
 				27C8CBBB1E73A97300FBFB4C /* Stadium.swift in Sources */,
 				27C8CBB31E73945700FBFB4C /* AppViewController.swift in Sources */,
@@ -514,6 +531,7 @@
 				27DFEADC1E7406930000B782 /* Api.swift in Sources */,
 				403F596C1E73CEDF00277908 /* FieldCell.swift in Sources */,
 				FFAC552C1E710F9A0014B755 /* MainViewController.swift in Sources */,
+				27DFEAE51E745DD20000B782 /* AppTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
