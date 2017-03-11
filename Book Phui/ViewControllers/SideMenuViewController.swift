@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import SDWebImage
 
 class SideMenuViewController: UIViewController {
     struct Content {
@@ -31,6 +33,13 @@ class SideMenuViewController: UIViewController {
         super.viewDidLoad()
 
         self.tableView.register(UINib(nibName: String(describing: SideMenuViewCell.self), bundle: nil), forCellReuseIdentifier: "Cell")
+        
+        lbName.text = FIRAuth.auth()?.currentUser?.displayName
+        
+        if let photoURL = FIRAuth.auth()?.currentUser?.photoURL {
+            avatarImage.sd_setImage(with: photoURL)
+            biggerAvatarImage.sd_setImage(with: photoURL)
+        }
     }
 }
 

@@ -28,7 +28,7 @@ class AppViewController: UIViewController {
         
         // Enable gestures. The left and/or right menus must be set up above for these to work.
         // Note that these continue to work on the Navigation Controller independent of the view controller it displays!
-        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+//        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController)
         SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
     }
 }
