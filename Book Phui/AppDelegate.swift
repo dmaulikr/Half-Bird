@@ -20,13 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        self.configSocialNetwork()
+//        self.configUI()
+        
+        return true
+    }
+    
+    func configSocialNetwork() {
         FIRApp.configure()
-        self.window = UIWindow(frame: UIScreen.main.bounds)
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
-
+        
         if (FIRAuth.auth()?.currentUser) != nil {
             self.presentMainScreen()
         } else {
@@ -40,10 +45,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 self.presentLoginScreen()
             }
         }
-        
-        return true
     }
 
+    func configUI() {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 36/255.0, green: 167/255.0, blue: 10/255.0, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor.white
+    UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(-60, -60), for: .default)
+    }
+    
     // MARK: - Firebase Auth
 //    func application(_ application: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any])
 //        -> Bool {
