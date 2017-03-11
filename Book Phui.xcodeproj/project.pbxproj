@@ -13,6 +13,7 @@
 		27C8CBAD1E72E5B800FBFB4C /* UIView_Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBAC1E72E5B800FBFB4C /* UIView_Borders.swift */; };
 		27C8CBB01E72E90E00FBFB4C /* SideMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBAE1E72E90E00FBFB4C /* SideMenuViewCell.swift */; };
 		27C8CBB11E72E90E00FBFB4C /* SideMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C8CBAF1E72E90E00FBFB4C /* SideMenuViewCell.xib */; };
+		27C8CBB31E73945700FBFB4C /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBB21E73945700FBFB4C /* AppViewController.swift */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
 		FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */; };
 		FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB161E6FB7F4002E30AA /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		27C8CBAC1E72E5B800FBFB4C /* UIView_Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Borders.swift; sourceTree = "<group>"; };
 		27C8CBAE1E72E90E00FBFB4C /* SideMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewCell.swift; sourceTree = "<group>"; };
 		27C8CBAF1E72E90E00FBFB4C /* SideMenuViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuViewCell.xib; sourceTree = "<group>"; };
+		27C8CBB21E73945700FBFB4C /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
 		9637CEA5FD37CD756EA81017 /* Pods-Book Phui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.debug.xcconfig"; sourceTree = "<group>"; };
 		A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Book_Phui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +156,7 @@
 				27C8CBA51E72E33E00FBFB4C /* SideMenu */,
 				FFAC55231E71079A0014B755 /* LoginViewController.swift */,
 				FFAC552B1E710F9A0014B755 /* MainViewController.swift */,
+				27C8CBB21E73945700FBFB4C /* AppViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				27C8CBAB1E72E5B000FBFB4C /* UIAvatar.swift in Sources */,
 				FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */,
 				27C8CBA31E72E31E00FBFB4C /* SideMenuViewController.swift in Sources */,
+				27C8CBB31E73945700FBFB4C /* AppViewController.swift in Sources */,
 				27C8CBB01E72E90E00FBFB4C /* SideMenuViewCell.swift in Sources */,
 				FFAC552C1E710F9A0014B755 /* MainViewController.swift in Sources */,
 			);
