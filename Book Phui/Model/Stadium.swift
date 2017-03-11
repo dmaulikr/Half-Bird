@@ -7,17 +7,19 @@
 //
 
 import Foundation
+import EVReflection
 
-class Stadium: NSObject {
+class Stadium: EVObject {
+    var id: Int = 0
     var thumbnailUrl: String?
     var name: String?
     var address: String?
     var opennedTime: String?
     var closedTime: String?
     var rating: Double = 0
-    var numberOfSubYards: Int = 0
+    var fields: Int = 0
     var lat: Double = 0
-    var long: Double = 0
+    var lng: Double = 0
     
     static var periodOfTime: [String] = [
         "06:00-08:00",

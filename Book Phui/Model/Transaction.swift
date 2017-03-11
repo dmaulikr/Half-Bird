@@ -7,9 +7,12 @@
 //
 
 import Foundation
+import EVReflection
 
-class Transaction: NSObject {
+class Transaction: EVObject {
     var stadium: Stadium?
+    var id: Int = 0
+    var stadiumId: Int = 0
     var periodOfTime: String?
     var bookedDate: Date?
 }

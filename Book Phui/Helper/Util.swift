@@ -23,9 +23,10 @@ class Util {
         return ""
     }
     
-    static func readFile(name: String, type: String = "") -> NSData? {
-        if let filepath = Bundle.main.path(forResource: name, ofType: type) {
-            return NSData(contentsOfFile: filepath)
+    static func readFile(name: String, type: String = "") -> Data? {
+        if let filepath = Bundle.main.path(forResource: name, ofType: type), let url = URL(string: filepath){
+            let data = try? Data(contentsOf: url)
+            return data
         } else {
             // file not found!
         }

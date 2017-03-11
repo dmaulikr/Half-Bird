@@ -57,7 +57,7 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         self.getData()
         self.clearMarker()
         for stadium in stadiums {
-            let position = CLLocationCoordinate2D(latitude: stadium.lat, longitude: stadium.long)
+            let position = CLLocationCoordinate2D(latitude: stadium.lat, longitude: stadium.lng)
             let marker = GMSMarker(position: position)
             marker.title = stadium.name
             marker.map = self.map
