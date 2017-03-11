@@ -17,4 +17,5 @@ target 'Book Phui' do
   pod 'ActionSheetPicker-3.0'
   pod 'EVReflection'
   pod 'NVActivityIndicatorView'
+  pod 'TPKeyboardAvoiding'
 end
