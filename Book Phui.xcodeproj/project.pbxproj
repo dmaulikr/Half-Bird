@@ -22,6 +22,8 @@
 		27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C8CBC11E73AAF600FBFB4C /* HistoryViewCell.xib */; };
 		27C8CBC51E73B03100FBFB4C /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBC41E73B03100FBFB4C /* DateHelper.swift */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
+		5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4414D71E739F0000015F1C /* FieldDetailVC.swift */; };
+		5F4414DA1E739F0000015F1C /* FieldDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4414D81E739F0000015F1C /* FieldDetailVC.xib */; };
 		FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */; };
 		FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB161E6FB7F4002E30AA /* Assets.xcassets */; };
 		FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB181E6FB7F4002E30AA /* LaunchScreen.storyboard */; };
@@ -53,6 +55,8 @@
 		27C8CBC11E73AAF600FBFB4C /* HistoryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewCell.xib; sourceTree = "<group>"; };
 		27C8CBC41E73B03100FBFB4C /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
+		5F4414D71E739F0000015F1C /* FieldDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldDetailVC.swift; sourceTree = "<group>"; };
+		5F4414D81E739F0000015F1C /* FieldDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldDetailVC.xib; sourceTree = "<group>"; };
 		9637CEA5FD37CD756EA81017 /* Pods-Book Phui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.debug.xcconfig"; sourceTree = "<group>"; };
 		A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Book_Phui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF23AB0C1E6FB7F4002E30AA /* Book Phui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Phui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +143,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5F4414D61E739F0000015F1C /* FieldDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				5F4414D71E739F0000015F1C /* FieldDetailVC.swift */,
+				5F4414D81E739F0000015F1C /* FieldDetailVC.xib */,
+			);
+			path = FieldDetailVC;
+			sourceTree = "<group>";
+		};
 		FF23AB031E6FB7F4002E30AA = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +203,7 @@
 			children = (
 				27C8CBB81E73A44500FBFB4C /* History */,
 				27C8CBA51E72E33E00FBFB4C /* SideMenu */,
+				5F4414D61E739F0000015F1C /* FieldDetailVC */,
 				FFAC55231E71079A0014B755 /* LoginViewController.swift */,
 				FFAC552B1E710F9A0014B755 /* MainViewController.swift */,
 				27C8CBB21E73945700FBFB4C /* AppViewController.swift */,
@@ -306,6 +320,7 @@
 			files = (
 				FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */,
 				FFAC552A1E710EC60014B755 /* Main.storyboard in Resources */,
+				5F4414DA1E739F0000015F1C /* FieldDetailVC.xib in Resources */,
 				27C8CBB11E72E90E00FBFB4C /* SideMenuViewCell.xib in Resources */,
 				27C8CBB71E73A44000FBFB4C /* HistoryViewController.xib in Resources */,
 				27C8CBA41E72E31E00FBFB4C /* SideMenuViewController.xib in Resources */,
@@ -379,6 +394,7 @@
 				27C8CBC51E73B03100FBFB4C /* DateHelper.swift in Sources */,
 				27C8CBB61E73A44000FBFB4C /* HistoryViewController.swift in Sources */,
 				27C8CBAB1E72E5B000FBFB4C /* UIAvatar.swift in Sources */,
+				5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */,
 				FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */,
 				27C8CBA31E72E31E00FBFB4C /* SideMenuViewController.swift in Sources */,
 				27C8CBBB1E73A97300FBFB4C /* Stadium.swift in Sources */,
