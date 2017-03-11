@@ -19,17 +19,16 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
         
         print("\(result)")
         if (error == nil) {
-            print(result.token.tokenString)
-            let credential = FIRFacebookAuthProvider.credential(withAccessToken: result.token.tokenString)
-            FIRAuth.auth()?.signIn(with: credential) { (user, error) in
-                // ...
-                if let error = error {
+            if !result.isCancelled {
+                let credential = FIRFacebookAuthProvider.credential(withAccessToken: result.token.tokenString)
+                FIRAuth.auth()?.signIn(with: credential) { (user, error) in
                     // ...
-                return
+                    if let error = error {
+                        // ...
+                        return
+                    }
                 }
             }
-        } else {
-            
         }
     }
     
@@ -41,8 +40,8 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
         super.viewDidLoad()
         GIDSignIn.sharedInstance().uiDelegate = self
         self.btnFBLogin = FBSDKLoginButton()
-        self.btnFBLogin.delegate = self;
         self.btnFBLogin.readPermissions = ["public_profile", "email", "user_friends"];
+        self.btnFBLogin.delegate = self;
         // Do any additional setup after loading the view.
     }
 

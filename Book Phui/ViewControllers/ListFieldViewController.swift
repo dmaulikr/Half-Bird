@@ -11,7 +11,7 @@ import UIKit
 protocol ListFieldDelegate {
     func didScrollUp()
     func didScrollDown()
-    func didSelectItem()
+    func didSelectItem(stadium:Stadium)
 }
 
 class ListFieldViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -32,6 +32,11 @@ class ListFieldViewController: UIViewController, UITableViewDataSource, UITableV
         // Dispose of any resources that can be recreated.
     }
     
+    func updateData(arrStadium: [Stadium]) {
+        self.stadiums = arrStadium
+        self.tableView.reloadData()
+    }
+    
     // MARK: - Setup table view
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -42,14 +47,14 @@ class ListFieldViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: Constants.StoryBoardID.FieldCellID) as! StadiumViewCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: Constants.StoryBoardID.StadiumViewCellID) as! StadiumViewCell
         let item = stadiums[indexPath.row]
         cell.config(with: item)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.delegate.didSelectItem()
+        self.delegate.didSelectItem(stadium: stadiums[indexPath.row])
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
