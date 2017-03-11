@@ -28,5 +28,12 @@ struct Constants {
     struct StoryBoardID {
         static let MainViewControllerID = "MainViewController"
         static let LoginViewControllerID = "LoginViewController"
+        static let ListFieldViewControllerID = "ListFieldViewController"
+        static let FieldCellID = "FieldCell"
+    }
+    
+    struct ConstantsString {
+        static let GoogleMapAPIKey = "AIzaSyCDsnW_PJz4w72JSNMAwZU-ShGv19BFxQ0"
+        
     }
 }
