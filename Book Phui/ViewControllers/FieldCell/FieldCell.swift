@@ -14,7 +14,7 @@ class FieldCell: UITableViewCell {
     
     @IBOutlet weak var lbAddress: UILabel!
     @IBOutlet weak var lbRank: UILabel!
-    @IBOutlet weak var imgAvatar: UIImageView!
+    @IBOutlet weak var imgAvatar: UIAvatar!
     
     
     override func awakeFromNib() {

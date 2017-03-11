@@ -12,16 +12,18 @@ import GoogleSignIn
 import GoogleMaps
 import SideMenu
 
-class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelegate {
+class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var listView: UIView!
     @IBOutlet weak var contraintTableTop: NSLayoutConstraint!
     @IBOutlet weak var mapView: UIView!
+    @IBOutlet weak var tfSearch: UITextField!
     var map : GMSMapView!
     var listFieldVC : ListFieldViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         LocationManager.sharedInstance.setupLocation()
         self.setupMap()
         self.addMapView()
@@ -29,7 +31,14 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         self.listFieldVC.view.frame = self.listView.bounds
         self.listView.addSubview(self.listFieldVC.view)
         self.listFieldVC.delegate = self
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+//        self.view.addGestureRecognizer(tap)
+        self.tfSearch.delegate = self
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,11 +51,22 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         try! firebaseAuth?.signOut()
         
     }
+    
+    // MARK: - Textfield delegate
+    func dismissKeyboard() {
+        self.tfSearch.resignFirstResponder()
+    }
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        self.didScrollDown()
+        return true;
+    }
+    
     // MARK: - List field Delegate
     func didScrollDown() {
         UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCurlDown, animations: {
             
-            self.contraintTableTop.constant = 0;
+            self.contraintTableTop.constant = 250;
             self.view.layoutIfNeeded()
         }, completion: { finished in
         })
@@ -55,7 +75,7 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
     func didScrollUp() {
         UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCurlDown, animations: {
             
-            self.contraintTableTop.constant = 300;
+            self.contraintTableTop.constant = 0;
             self.view.layoutIfNeeded()
         }, completion: { finished in
         })

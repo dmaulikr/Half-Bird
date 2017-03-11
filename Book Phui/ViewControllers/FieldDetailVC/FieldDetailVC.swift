@@ -30,6 +30,7 @@ class FieldDetailVC: UIViewController {
     }
 
     func configView() {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationItem.title = "Sân bóng Phạm Hùng A" //ThaoTODO: Rename title
         formatter.dateFormat = "dd/MM"
         self.getDay()
@@ -74,6 +75,10 @@ class FieldDetailVC: UIViewController {
     
     //MARK: Button Action
     @IBAction func btnWeekdayClick(_ sender: UIButton) {
+    }
+    @IBAction func btnBookClick(_ sender: Any) {
+        let vc = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     

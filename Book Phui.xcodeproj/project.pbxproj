@@ -27,6 +27,8 @@
 		27DFEAD91E73E23B0000B782 /* StadiumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */; };
 		27DFEADA1E73E23B0000B782 /* StadiumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAD81E73E23B0000B782 /* StadiumViewCell.xib */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
+		4002BCAE1E73E1EC0037B5E3 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */; };
+		4002BCAF1E73E1EC0037B5E3 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */; };
 		403F596C1E73CEDF00277908 /* FieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F59691E73CEDF00277908 /* FieldCell.swift */; };
 		403F596D1E73CEDF00277908 /* FieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403F596A1E73CEDF00277908 /* FieldCell.xib */; };
 		403F596E1E73CEDF00277908 /* ListFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F596B1E73CEDF00277908 /* ListFieldViewController.swift */; };
@@ -69,6 +71,8 @@
 		27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StadiumViewCell.swift; sourceTree = "<group>"; };
 		27DFEAD81E73E23B0000B782 /* StadiumViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StadiumViewCell.xib; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
+		4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
 		403F59691E73CEDF00277908 /* FieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldCell.swift; sourceTree = "<group>"; };
 		403F596A1E73CEDF00277908 /* FieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldCell.xib; sourceTree = "<group>"; };
 		403F596B1E73CEDF00277908 /* ListFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFieldViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +176,15 @@
 			path = FieldCell;
 			sourceTree = "<group>";
 		};
+		403F59711E73DF4B00277908 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */,
+				4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
 		59824DEA6F3966F60022CFDC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,7 +252,9 @@
 		FF23AB221E6FBA34002E30AA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+
 				27DFEAD21E73D1AF0000B782 /* Search */,
+				403F59711E73DF4B00277908 /* Payment */,
 				27C8CBB81E73A44500FBFB4C /* History */,
 				27C8CBA51E72E33E00FBFB4C /* SideMenu */,
 				5F4414D61E739F0000015F1C /* FieldDetailVC */,
@@ -374,6 +389,7 @@
 				FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */,
 				FFAC55271E710E750014B755 /* Login.storyboard in Resources */,
 				27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */,
+				4002BCAF1E73E1EC0037B5E3 /* PaymentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +450,7 @@
 			files = (
 				27C8CBC21E73AAF600FBFB4C /* HistoryViewCell.swift in Sources */,
 				403F596E1E73CEDF00277908 /* ListFieldViewController.swift in Sources */,
+				4002BCAE1E73E1EC0037B5E3 /* PaymentViewController.swift in Sources */,
 				FFAC55241E71079A0014B755 /* LoginViewController.swift in Sources */,
 				FF23AB4D1E6FE16D002E30AA /* Constants.swift in Sources */,
 				27DFEAD51E73D2540000B782 /* SearchingViewController.swift in Sources */,
