@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 import GoogleSignIn
-
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey(Constants.ConstantsString.GoogleMapAPIKey)
         self.configUI()
         self.configSocialNetwork()
         
@@ -30,20 +31,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
-        self.comeToThao()   
-//        if (FIRAuth.auth()?.currentUser) != nil {
-//            self.presentMainScreen()
-//        } else {
-//            self.presentLoginScreen()
-//        }
-//        
-//        FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
-//            if FIRAuth.auth()?.currentUser != nil {
-//                self.presentMainScreen()
-//            } else {
-//                self.presentLoginScreen()
-//            }
-//        }
+        if (FIRAuth.auth()?.currentUser) != nil {
+            self.presentMainScreen()
+        } else {
+            self.presentLoginScreen()
+        }
+        
+        FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
+            if FIRAuth.auth()?.currentUser != nil {
+                self.presentMainScreen()
+            } else {
+                self.presentLoginScreen()
+            }
+        }
     }
 
     func configUI() {
