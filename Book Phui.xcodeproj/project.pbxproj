@@ -22,8 +22,6 @@
 		27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C8CBC11E73AAF600FBFB4C /* HistoryViewCell.xib */; };
 		27C8CBC51E73B03100FBFB4C /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBC41E73B03100FBFB4C /* DateHelper.swift */; };
 		27DFEACC1E73CAF60000B782 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEACB1E73CAF60000B782 /* Util.swift */; };
-		27DFEAD01E73CF7A0000B782 /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEACE1E73CF7A0000B782 /* BookingViewController.swift */; };
-		27DFEAD11E73CF7A0000B782 /* BookingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEACF1E73CF7A0000B782 /* BookingViewController.xib */; };
 		27DFEAD51E73D2540000B782 /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAD31E73D2540000B782 /* SearchingViewController.swift */; };
 		27DFEAD61E73D2540000B782 /* SearchingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAD41E73D2540000B782 /* SearchingViewController.xib */; };
 		27DFEAD91E73E23B0000B782 /* StadiumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */; };
@@ -66,8 +64,6 @@
 		27C8CBC11E73AAF600FBFB4C /* HistoryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewCell.xib; sourceTree = "<group>"; };
 		27C8CBC41E73B03100FBFB4C /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		27DFEACB1E73CAF60000B782 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		27DFEACE1E73CF7A0000B782 /* BookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
-		27DFEACF1E73CF7A0000B782 /* BookingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingViewController.xib; sourceTree = "<group>"; };
 		27DFEAD31E73D2540000B782 /* SearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
 		27DFEAD41E73D2540000B782 /* SearchingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchingViewController.xib; sourceTree = "<group>"; };
 		27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StadiumViewCell.swift; sourceTree = "<group>"; };
@@ -154,15 +150,6 @@
 				27C8CBBC1E73AA4800FBFB4C /* Transaction.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		27DFEACD1E73CF590000B782 /* Booking */ = {
-			isa = PBXGroup;
-			children = (
-				27DFEACE1E73CF7A0000B782 /* BookingViewController.swift */,
-				27DFEACF1E73CF7A0000B782 /* BookingViewController.xib */,
-			);
-			path = Booking;
 			sourceTree = "<group>";
 		};
 		27DFEAD21E73D1AF0000B782 /* Search */ = {
@@ -253,7 +240,6 @@
 			isa = PBXGroup;
 			children = (
 				27DFEAD21E73D1AF0000B782 /* Search */,
-				27DFEACD1E73CF590000B782 /* Booking */,
 				27C8CBB81E73A44500FBFB4C /* History */,
 				27C8CBA51E72E33E00FBFB4C /* SideMenu */,
 				5F4414D61E739F0000015F1C /* FieldDetailVC */,
@@ -388,7 +374,6 @@
 				FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */,
 				FFAC55271E710E750014B755 /* Login.storyboard in Resources */,
 				27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */,
-				27DFEAD11E73CF7A0000B782 /* BookingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +447,6 @@
 				27C8CBAB1E72E5B000FBFB4C /* UIAvatar.swift in Sources */,
 				5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */,
 				FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */,
-				27DFEAD01E73CF7A0000B782 /* BookingViewController.swift in Sources */,
 				27C8CBA31E72E31E00FBFB4C /* SideMenuViewController.swift in Sources */,
 				27C8CBBB1E73A97300FBFB4C /* Stadium.swift in Sources */,
 				27C8CBB31E73945700FBFB4C /* AppViewController.swift in Sources */,

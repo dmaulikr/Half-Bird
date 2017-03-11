@@ -69,7 +69,7 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let vc = UIViewController(nibName: String(describing: HistoryViewController.self), bundle: nil)
+            let vc = HistoryViewController(nibName: String(describing: HistoryViewController.self), bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
             break
         case 1:
