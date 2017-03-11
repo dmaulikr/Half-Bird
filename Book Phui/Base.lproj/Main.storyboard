@@ -100,7 +100,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quP-Cz-EMk">
                                                         <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
                                                         <state key="normal" title="17:00 - 18:30">
-                                                            <color key="titleColor" red="0.0099217121749999998" green="1" blue="0.13253190719999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" red="0.32545870542526245" green="0.32551032304763794" blue="0.3254474401473999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="btnTimeSeachClick:" destination="tLA-Sy-jbd" eventType="touchUpInside" id="yBB-zR-MG4"/>
@@ -176,7 +176,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G2a-Ub-cQx">
                                 <rect key="frame" x="0.0" y="467" width="375" height="200"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CF9550E5-9434-48DE-98AF-18D3448819D1" translatesAutoresizingMaskIntoConstraints="NO" id="LC0-Qs-BlR" customClass="UIAvatar" customModule="Book_Phui" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B78BBD4F-43E7-47EC-8FCD-5E864B81C95C" translatesAutoresizingMaskIntoConstraints="NO" id="LC0-Qs-BlR" customClass="UIAvatar" customModule="Book_Phui" customModuleProvider="target">
                                         <rect key="frame" x="10" y="30" width="90" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="LC0-Qs-BlR" secondAttribute="height" id="wl1-gh-wkm"/>
@@ -325,7 +325,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B6t-iN-ee4">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B6t-iN-ee4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -352,7 +352,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="CF9550E5-9434-48DE-98AF-18D3448819D1" width="375" height="200">
+        <image name="B78BBD4F-43E7-47EC-8FCD-5E864B81C95C" width="375" height="200">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
