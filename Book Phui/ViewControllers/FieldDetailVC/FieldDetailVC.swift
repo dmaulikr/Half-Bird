@@ -62,6 +62,8 @@ class FieldDetailVC: UIViewController {
         button.titleLabel?.textAlignment = .center
         if (button.tag == tag) {
             button.isSelected = true
+            button.layer.borderWidth = 1.0
+            button.layer.borderColor = UIColor.red.cgColor
             let todayText = formatter.string(from: today)
             button.setTitle("\(button.titleLabel!.text!)\n\(todayText)", for: .normal)
         } else if (button.tag > tag) {
@@ -75,11 +77,28 @@ class FieldDetailVC: UIViewController {
     
     //MARK: Button Action
     @IBAction func btnWeekdayClick(_ sender: UIButton) {
+        self.doSelectWeekday(sender: sender)
     }
+    
     @IBAction func btnBookClick(_ sender: Any) {
         let vc = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    //MARK: Support method
+    func doSelectWeekday(sender: UIButton) {
+        if !sender.isSelected {
+            self.deselectAllButton()
+            sender.isSelected = true
+        }
+    }
     
+    func deselectAllButton() {
+        for subView in self.weekdayView.subviews {
+            if subView is UIButton {
+                let button = subView as! UIButton
+                button.isSelected = false
+            }
+        }
+    }
 }
