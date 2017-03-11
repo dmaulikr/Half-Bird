@@ -118,7 +118,7 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
     
     func didSelectItem(stadium:Stadium) {
         let vc = FieldDetailVC(nibName: "FieldDetailVC", bundle: nil)
-        
+        vc.stadium = stadium
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

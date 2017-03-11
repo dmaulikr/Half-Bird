@@ -54,7 +54,7 @@ class ListFieldViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.delegate.didSelectItem(stadiums[indexPath.row])
+        self.delegate.didSelectItem(stadium: stadiums[indexPath.row])
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
