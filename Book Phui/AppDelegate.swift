@@ -11,7 +11,6 @@ import Firebase
 import GoogleSignIn
 
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
@@ -20,8 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.configUI()
         self.configSocialNetwork()
-//        self.configUI()
         
         return true
     }
@@ -31,27 +30,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
         
-        
-        if (FIRAuth.auth()?.currentUser) != nil {
-            self.presentMainScreen()
-        } else {
-            self.presentLoginScreen()
-        }
-        
-        FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
-            if FIRAuth.auth()?.currentUser != nil {
-                self.presentMainScreen()
-            } else {
-                self.presentLoginScreen()
-            }
-        }
+        self.comeToThao()   
+//        if (FIRAuth.auth()?.currentUser) != nil {
+//            self.presentMainScreen()
+//        } else {
+//            self.presentLoginScreen()
+//        }
+//        
+//        FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
+//            if FIRAuth.auth()?.currentUser != nil {
+//                self.presentMainScreen()
+//            } else {
+//                self.presentLoginScreen()
+//            }
+//        }
     }
 
     func configUI() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         UINavigationBar.appearance().barTintColor = UIColor(red: 36/255.0, green: 167/255.0, blue: 10/255.0, alpha: 1)
         UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
     UIBarButtonItem.appearance().setBackButtonTitlePositionAdjustment(UIOffsetMake(-60, -60), for: .default)
+    }
+    
+    func comeToThao() {
+        let fieldDetailVC = FieldDetailVC()
+        let nav = UINavigationController(rootViewController: fieldDetailVC)
+        
+        self.window?.rootViewController = nav
+        self.window?.makeKeyAndVisible()
     }
     
     // MARK: - Firebase Auth
