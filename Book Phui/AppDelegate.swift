@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import GoogleSignIn
 import GoogleMaps
+import SideMenu
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
@@ -47,6 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     }
 
     func configUI() {
+        self.configSideMenu()
         self.window = UIWindow(frame: UIScreen.main.bounds)
         UINavigationBar.appearance().barTintColor = UIColor(red: 36/255.0, green: 167/255.0, blue: 10/255.0, alpha: 1)
         UINavigationBar.appearance().tintColor = UIColor.white
@@ -133,5 +135,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         self.window?.makeKeyAndVisible()
     }
 
+    func configSideMenu() {
+        let sideMenu = SideMenuViewController(nibName: String(describing: SideMenuViewController.self), bundle: nil)
+        
+        let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: sideMenu)
+        menuLeftNavigationController.leftSide = true
+        SideMenuManager.menuWidth = 240
+        SideMenuManager.menuBlurEffectStyle = .dark
+        SideMenuManager.menuEnableSwipeGestures = false
+        SideMenuManager.menuPresentMode = .menuSlideIn
+        SideMenuManager.menuFadeStatusBar = false
+        SideMenuManager.menuPushStyle = .preserve
+        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
+    }
 }
 

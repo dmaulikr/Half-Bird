@@ -23,8 +23,8 @@ class SideMenuViewController: UIViewController {
 
     let contents: [Content] = [
         Content(title: "Sân bóng đã đặt", imageName: "stadiumIcon"),
-        Content(title: "Sự kiện, giải đấu", imageName: "eventIcon"),
-        Content(title: "Khuyến mãi", imageName: "voucherIcon"),
+        Content(title: "Sự kiện, giải đấu", imageName: "evenIcon"),
+        Content(title: "Khuyến mãi", imageName: "vocherIcon"),
         Content(title: "Phương thức thanh toán", imageName: "paymentIcon"),
         Content(title: "Cài đặt", imageName: "settingIcon"),
         Content(title: "Đăng xuất", imageName: "logoutIcon")
@@ -34,6 +34,7 @@ class SideMenuViewController: UIViewController {
         super.viewDidLoad()
 
         self.tableView.register(UINib(nibName: String(describing: SideMenuViewCell.self), bundle: nil), forCellReuseIdentifier: "Cell")
+        self.navigationController?.isNavigationBarHidden = true
         
         lbName.text = FIRAuth.auth()?.currentUser?.displayName
         
@@ -81,9 +82,13 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource {
         case 4:
             break
         case 5:
+            try? FIRAuth.auth()?.signOut()
+            FBSDKLoginManager().logOut()
             break
         default:
             break
         }
+        
+        tableView.cellForRow(at: indexPath)?.isSelected = false
     }
 }

@@ -17,18 +17,9 @@ class AppViewController: UIViewController {
     }
     
     func configSideMenu() {
-        let sideMenu = SideMenuViewController(nibName: String(describing: SideMenuViewController.self), bundle: nil)
-        
-        let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: sideMenu)
-        menuLeftNavigationController.leftSide = true
-        // UISideMenuNavigationController is a subclass of UINavigationController, so do any additional configuration
-        // of it here like setting its viewControllers. If you're using storyboards, you'll want to do something like:
-        // let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! UISideMenuNavigationController
-        SideMenuManager.menuLeftNavigationController = menuLeftNavigationController
-        
         // Enable gestures. The left and/or right menus must be set up above for these to work.
         // Note that these continue to work on the Navigation Controller independent of the view controller it displays!
-//        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController)
+        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
         SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
     }
 }

@@ -16,9 +16,16 @@ class HistoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         self.tableView.register(UINib(nibName: String(describing: HistoryViewCell.self), bundle: nil), forCellReuseIdentifier: "Cell")
+        self.navigationItem.title = "Lịch sử đặt sân"
+        self.navigationController?.isNavigationBarHidden = false
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }
 
