@@ -15,18 +15,25 @@ import ActionSheetPicker_3_0
 
 class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelegate, UITextFieldDelegate {
 
+    @IBOutlet weak var detailView: UIView!
+    @IBOutlet weak var contraintDetailViewHeigh: NSLayoutConstraint!
     @IBOutlet weak var listView: UIView!
     @IBOutlet weak var contraintTimeFilerHeigh: NSLayoutConstraint!
     @IBOutlet weak var contraintTableTop: NSLayoutConstraint!
     @IBOutlet weak var mapView: UIView!
     @IBOutlet weak var tfSearch: UITextField!
     
+    @IBOutlet weak var lbDetailRank: UILabel!
+    @IBOutlet weak var lbDetailAddress: UILabel!
+    @IBOutlet weak var lbDetailStadiumName: UILabel!
+    @IBOutlet weak var imgDetailAvatar: UIAvatar!
     @IBOutlet weak var btnTimeSearch: UIButton!
     var map : GMSMapView!
     var listFieldVC : ListFieldViewController!
     var stadiums: [Stadium] = []
     var markers: [GMSMarker] = []
     var periodOfTime = Stadium.periodOfTime
+    var indexSelected: Int = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +49,7 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         self.tfSearch.delegate = self
         self.tfSearch.superview?.superview?.clipsToBounds = true
         self.btnTimeSearch.superview?.superview?.clipsToBounds = true
+        self.contraintDetailViewHeigh.constant = 500
         self.updateData()
     }
     
@@ -60,10 +68,12 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
                 let position = CLLocationCoordinate2D(latitude: stadium.lat, longitude: stadium.lng)
                 let marker = GMSMarker(position: position)
                 marker.title = stadium.name
+
                 marker.icon = UIImage(named: "marker")
                 marker.map = self.map
-                
+                self.markers.append(marker)
             }
+            self.stadiums = stadiums
             self.listFieldVC.updateData(arrStadium: stadiums)
         }
     }
@@ -146,6 +156,47 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         
     }
     
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        self.hideDetailView()
+    }
+    
+    
+    
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        
+        indexSelected = markers.index(of: marker)!
+        self.showDetailView()
+        return false
+    }
+    
+    func showDetailView() {
+        if indexSelected != -1 {
+            let stadium = stadiums[indexSelected]
+            if let thumbnailUrl = stadium.thumbnailUrl, let url = URL(string: thumbnailUrl) {
+                self.imgDetailAvatar.sd_setImage(with: url)
+            }
+            self.lbDetailStadiumName.text = stadium.name
+            self.lbDetailAddress.text = stadium.address
+            self.lbDetailRank.text = "\(stadium.rating)"
+            UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCurlUp, animations: {
+                
+                self.contraintDetailViewHeigh.constant = 0
+                self.view.layoutIfNeeded()
+            }, completion: { finished in
+            })
+        }
+        
+    }
+    
+    func hideDetailView() {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCurlDown, animations: {
+
+            self.contraintDetailViewHeigh.constant = 500
+            self.view.layoutIfNeeded()
+        }, completion: { finished in
+        })
+    }
+    
     func addMapView() {
         self.mapView.addSubview(self.map)
         self.mapView.addSubview(map)
@@ -180,8 +231,10 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
             self.btnTimeSearch .setTitle(self.periodOfTime[index], for: .normal)
             }, cancel: nil, origin: window)
     }
-    // MARK: - Action
     
+    
+    @IBAction func btnDetailClick(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

@@ -48,6 +48,7 @@ class ListFieldViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: Constants.StoryBoardID.StadiumViewCellID) as! StadiumViewCell
+        cell.selectionStyle = .none
         let item = stadiums[indexPath.row]
         cell.config(with: item)
         return cell
