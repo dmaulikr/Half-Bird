@@ -15,6 +15,8 @@
                 <outlet property="btnBook" destination="ByT-3E-ahC" id="Z6I-AB-aWP"/>
                 <outlet property="collectionTimes" destination="PAc-Wc-mV5" id="E9G-cv-N5i"/>
                 <outlet property="constrantHeightCollection" destination="GGz-xa-lRf" id="fjR-0P-z2k"/>
+                <outlet property="lbAddress" destination="fmy-b5-t2W" id="RYu-Ie-u4k"/>
+                <outlet property="lbNumField" destination="8ub-OO-7Iv" id="G5M-b4-J1q"/>
                 <outlet property="pageControl" destination="Lr3-br-x4M" id="De1-Wg-WcM"/>
                 <outlet property="slideView" destination="SI2-Ux-tOt" id="h1e-Ua-NLT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

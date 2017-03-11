@@ -9,7 +9,10 @@
 import UIKit
 
 class TimeCell: UICollectionViewCell {
-
+    @IBOutlet var lbTime: UILabel!
+    @IBOutlet var containerView: UIView!
+    var status: Int?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

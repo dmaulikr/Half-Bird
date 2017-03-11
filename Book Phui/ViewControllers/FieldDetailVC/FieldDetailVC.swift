@@ -18,6 +18,8 @@ class FieldDetailVC: UIViewController, UICollectionViewDataSource, UICollectionV
     @IBOutlet var slideView: iCarousel!
     @IBOutlet var pageControl: UIPageControl!
     
+    @IBOutlet var lbNumField: UILabel!
+    @IBOutlet var lbAddress: UILabel!
     let today = Date()
     let formatter = DateFormatter()
     var stadium: Stadium?
@@ -34,7 +36,9 @@ class FieldDetailVC: UIViewController, UICollectionViewDataSource, UICollectionV
 
     func configView() {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        self.navigationItem.title = "Sân bóng Phạm Hùng A" //ThaoTODO: Rename title
+        self.navigationItem.title = stadium?.name
+        self.lbAddress.text = stadium?.address
+        self.lbNumField.text = "\(stadium!.fields) sân"
         formatter.dateFormat = "dd/MM"
         self.getDay()
         self.collectionTimes.register(UINib(nibName: Constants.StoryBoardID.TimeCellID, bundle: nil), forCellWithReuseIdentifier: Constants.StoryBoardID.TimeCellID)
@@ -134,12 +138,18 @@ class FieldDetailVC: UIViewController, UICollectionViewDataSource, UICollectionV
 
     //MARK: CollectionViewDatasource
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return Stadium.periodOfTime.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.StoryBoardID.TimeCellID, for: indexPath as IndexPath) as! TimeCell
-        
+        cell.lbTime.text = Stadium.periodOfTime[indexPath.row]
+        let status = Stadium.arrayStatus[indexPath.row]
+        cell.status = status
+        if (status == 1) {
+            cell.containerView.layer.borderColor = UIColor.lightGray.cgColor
+            cell.lbTime.textColor = UIColor.lightGray
+        } 
         return cell
     }
     
@@ -149,5 +159,22 @@ class FieldDetailVC: UIViewController, UICollectionViewDataSource, UICollectionV
     
     
     //MARK: CollectionViewDelegate
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! TimeCell
+        if cell.status == 1 {
+            return
+        }
+        
+        for visibleCell in collectionView.visibleCells {
+            if let timeCell = visibleCell as? TimeCell {
+                if timeCell.status == 1 {
+                    continue
+                }
+                timeCell.containerView.layer.borderColor = UIColor.black.cgColor
+                timeCell.containerView.layer.borderWidth = 1.0;
+            }
+        }
+        cell.containerView.layer.borderColor = UIColor(red: 36/255.0, green: 167/255.0, blue: 10/255.0, alpha: 1).cgColor
+        cell.containerView.layer.borderWidth = 2.0;
+    }
 }

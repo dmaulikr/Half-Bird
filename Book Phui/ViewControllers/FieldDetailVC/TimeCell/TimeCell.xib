@@ -30,7 +30,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150k" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zty-dn-uWT">
                                 <rect key="frame" x="15" y="32" width="170" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -65,6 +65,10 @@
                 <constraint firstItem="zty-dn-uWT" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="K2f-dT-oSy"/>
                 <constraint firstAttribute="trailing" secondItem="shw-22-OHU" secondAttribute="trailing" id="bRy-Ov-KlR"/>
             </constraints>
+            <connections>
+                <outlet property="containerView" destination="shw-22-OHU" id="2fJ-On-XcX"/>
+                <outlet property="lbTime" destination="8cG-i1-cDu" id="COh-vQ-l6R"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>
