@@ -234,6 +234,7 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
     
     
     @IBAction func btnDetailClick(_ sender: Any) {
+        self.didSelectItem(stadium: self.stadiums[indexSelected])
     }
     /*
     // MARK: - Navigation

@@ -9,11 +9,13 @@
 import UIKit
 import FirebaseAuth
 import GoogleSignIn
+import NVActivityIndicatorView
 
 class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButtonDelegate {
     
     
     var btnFBLogin: FBSDKLoginButton!
+    var activityIndicatorView : NVActivityIndicatorView!
 
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         
@@ -27,9 +29,12 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
                         // ...
                         return
                     }
+                    self.activityIndicatorView.stopAnimating()
                 }
+                
             }
         }
+        self.activityIndicatorView.stopAnimating()
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
@@ -43,6 +48,10 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
         self.btnFBLogin.readPermissions = ["public_profile", "email", "user_friends"];
         self.btnFBLogin.delegate = self;
         // Do any additional setup after loading the view.
+        
+        self.activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        self.view.addSubview(self.activityIndicatorView)
+        self.activityIndicatorView.startAnimating()
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,7 +62,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
     @IBAction func btnLoginFBClick(_ sender: Any) {
         //TODO : show loading
         self.btnFBLogin.sendActions(for: .touchUpInside)
-        
+        self.activityIndicatorView.startAnimating()
     }
 
     @IBAction func btnLoginGGClick(_ sender: Any) {

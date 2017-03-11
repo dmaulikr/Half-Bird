@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GMSServices.provideAPIKey(Constants.ConstantsString.GoogleMapAPIKey)
         self.configUI()
         self.configSocialNetwork()
-        
+        self.configSideMenu()
         return true
     }
     
@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         if (FIRAuth.auth()?.currentUser) != nil {
             self.presentMainScreen()
+            print("\(FIRAuth.auth()?.currentUser?.email) + \(FIRAuth.auth()?.currentUser?.displayName) + \(FIRAuth.auth()?.currentUser?.photoURL)")
         } else {
             self.presentLoginScreen()
         }
@@ -43,12 +44,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                 self.presentMainScreen()
             } else {
                 self.presentLoginScreen()
+                self.configSideMenu()
             }
         }
     }
 
     func configUI() {
-        self.configSideMenu()
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
         UINavigationBar.appearance().barTintColor = UIColor(red: 36/255.0, green: 167/255.0, blue: 10/255.0, alpha: 1)
         UINavigationBar.appearance().tintColor = UIColor.white
