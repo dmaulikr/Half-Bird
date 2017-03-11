@@ -31,6 +31,8 @@
 		4002BCAE1E73E1EC0037B5E3 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */; };
 		4002BCAF1E73E1EC0037B5E3 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */; };
 		4002BCB31E7438B20037B5E3 /* 001.json in Resources */ = {isa = PBXBuildFile; fileRef = 4002BCB21E7438B20037B5E3 /* 001.json */; };
+		4002BCB71E74439C0037B5E3 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002BCB51E74439C0037B5E3 /* TimeCell.swift */; };
+		4002BCB81E74439C0037B5E3 /* TimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4002BCB61E74439C0037B5E3 /* TimeCell.xib */; };
 		403F596C1E73CEDF00277908 /* FieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F59691E73CEDF00277908 /* FieldCell.swift */; };
 		403F596D1E73CEDF00277908 /* FieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403F596A1E73CEDF00277908 /* FieldCell.xib */; };
 		403F596E1E73CEDF00277908 /* ListFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F596B1E73CEDF00277908 /* ListFieldViewController.swift */; };
@@ -77,6 +79,8 @@
 		4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
 		4002BCB21E7438B20037B5E3 /* 001.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 001.json; sourceTree = "<group>"; };
+		4002BCB51E74439C0037B5E3 /* TimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		4002BCB61E74439C0037B5E3 /* TimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeCell.xib; sourceTree = "<group>"; };
 		403F59691E73CEDF00277908 /* FieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldCell.swift; sourceTree = "<group>"; };
 		403F596A1E73CEDF00277908 /* FieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldCell.xib; sourceTree = "<group>"; };
 		403F596B1E73CEDF00277908 /* ListFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFieldViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +183,15 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		4002BCB41E74439C0037B5E3 /* TimeCell */ = {
+			isa = PBXGroup;
+			children = (
+				4002BCB51E74439C0037B5E3 /* TimeCell.swift */,
+				4002BCB61E74439C0037B5E3 /* TimeCell.xib */,
+			);
+			path = TimeCell;
+			sourceTree = "<group>";
+		};
 		403F59681E73CEDF00277908 /* FieldCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +222,7 @@
 		5F4414D61E739F0000015F1C /* FieldDetailVC */ = {
 			isa = PBXGroup;
 			children = (
+				4002BCB41E74439C0037B5E3 /* TimeCell */,
 				5F4414D71E739F0000015F1C /* FieldDetailVC.swift */,
 				5F4414D81E739F0000015F1C /* FieldDetailVC.xib */,
 			);
@@ -401,6 +415,7 @@
 				4002BCB31E7438B20037B5E3 /* 001.json in Resources */,
 				27DFEAD61E73D2540000B782 /* SearchingViewController.xib in Resources */,
 				FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */,
+				4002BCB81E74439C0037B5E3 /* TimeCell.xib in Resources */,
 				FFAC55271E710E750014B755 /* Login.storyboard in Resources */,
 				27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */,
 				4002BCAF1E73E1EC0037B5E3 /* PaymentViewController.xib in Resources */,
@@ -462,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4002BCB71E74439C0037B5E3 /* TimeCell.swift in Sources */,
 				27C8CBC21E73AAF600FBFB4C /* HistoryViewCell.swift in Sources */,
 				403F596E1E73CEDF00277908 /* ListFieldViewController.swift in Sources */,
 				4002BCAE1E73E1EC0037B5E3 /* PaymentViewController.swift in Sources */,

@@ -1,17 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FieldDetailVC" customModule="Book_Phui" customModuleProvider="target">
             <connections>
+                <outlet property="btnBook" destination="ByT-3E-ahC" id="Z6I-AB-aWP"/>
+                <outlet property="collectionTimes" destination="PAc-Wc-mV5" id="E9G-cv-N5i"/>
+                <outlet property="constrantHeightCollection" destination="GGz-xa-lRf" id="fjR-0P-z2k"/>
+                <outlet property="pageControl" destination="Lr3-br-x4M" id="De1-Wg-WcM"/>
+                <outlet property="slideView" destination="SI2-Ux-tOt" id="h1e-Ua-NLT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="weekdayView" destination="qhG-ai-GrP" id="YGc-Uh-Yqw"/>
                 <outletCollection property="btnWeekdays" destination="Dzu-Md-4HB" collectionClass="NSMutableArray" id="sUk-8t-kvD"/>
@@ -32,23 +37,17 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26R-z6-Zrf" userLabel="Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="561"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SI2-Ux-tOt" customClass="iCarousel">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_field_1" translatesAutoresizingMaskIntoConstraints="NO" id="D6f-1i-obp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
-                                        </imageView>
-                                    </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="D6f-1i-obp" secondAttribute="bottom" id="F60-Tf-PLs"/>
-                                        <constraint firstAttribute="trailing" secondItem="D6f-1i-obp" secondAttribute="trailing" id="LuJ-Um-JN1"/>
                                         <constraint firstAttribute="width" secondItem="SI2-Ux-tOt" secondAttribute="height" multiplier="375:200" id="awg-qz-ZwA"/>
-                                        <constraint firstItem="D6f-1i-obp" firstAttribute="top" secondItem="SI2-Ux-tOt" secondAttribute="top" id="eEn-uk-Htw"/>
-                                        <constraint firstItem="D6f-1i-obp" firstAttribute="leading" secondItem="SI2-Ux-tOt" secondAttribute="leading" id="xV9-GA-EHz"/>
                                     </constraints>
                                 </view>
+                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Lr3-br-x4M">
+                                    <rect key="frame" x="168" y="163" width="39" height="37"/>
+                                </pageControl>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yc9-kT-bIF" userLabel="Info View">
                                     <rect key="frame" x="0.0" y="200" width="375" height="108"/>
                                     <subviews>
@@ -134,13 +133,15 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhG-ai-GrP" userLabel="Weekday View">
                                     <rect key="frame" x="10" y="316" width="355" height="50"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzu-Md-4HB">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzu-Md-4HB">
                                             <rect key="frame" x="0.0" y="0.0" width="50.5" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <state key="normal" title="Thứ 2">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <state key="selected" backgroundImage="bg_choose_weekday"/>
+                                            <state key="selected" backgroundImage="bg_choose_weekday">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                     <real key="value" value="3"/>
@@ -150,13 +151,15 @@
                                                 <action selector="btnWeekdayClick:" destination="-1" eventType="touchUpInside" id="6lH-pS-zYJ"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzo-4Q-L2x">
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzo-4Q-L2x">
                                             <rect key="frame" x="50.5" y="0.0" width="51" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <state key="normal" title="Thứ 3">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <state key="selected" backgroundImage="bg_choose_weekday"/>
+                                            <state key="selected" backgroundImage="bg_choose_weekday">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                     <real key="value" value="3"/>
@@ -166,13 +169,15 @@
                                                 <action selector="btnWeekdayClick:" destination="-1" eventType="touchUpInside" id="wxP-2X-k0J"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9S-K8-5cb">
+                                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9S-K8-5cb">
                                             <rect key="frame" x="101.5" y="0.0" width="50.5" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <state key="normal" title="Thứ 4">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <state key="selected" backgroundImage="bg_choose_weekday"/>
+                                            <state key="selected" backgroundImage="bg_choose_weekday">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                     <real key="value" value="3"/>
@@ -182,13 +187,15 @@
                                                 <action selector="btnWeekdayClick:" destination="-1" eventType="touchUpInside" id="kDh-s1-sgh"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruY-XJ-g6V">
+                                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruY-XJ-g6V">
                                             <rect key="frame" x="152" y="0.0" width="51" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <state key="normal" title="Thứ 5">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <state key="selected" backgroundImage="bg_choose_weekday"/>
+                                            <state key="selected" backgroundImage="bg_choose_weekday">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                     <real key="value" value="3"/>
@@ -198,13 +205,15 @@
                                                 <action selector="btnWeekdayClick:" destination="-1" eventType="touchUpInside" id="mjX-t4-UGl"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onq-l4-ZvT">
+                                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onq-l4-ZvT">
                                             <rect key="frame" x="203" y="0.0" width="50.5" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <state key="normal" title="Thứ 6">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <state key="selected" backgroundImage="bg_choose_weekday"/>
+                                            <state key="selected" backgroundImage="bg_choose_weekday">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                     <real key="value" value="3"/>
@@ -214,13 +223,15 @@
                                                 <action selector="btnWeekdayClick:" destination="-1" eventType="touchUpInside" id="NpN-V8-FWI"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6k-sf-TAP">
+                                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6k-sf-TAP">
                                             <rect key="frame" x="253.5" y="0.0" width="51" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <state key="normal" title="Thứ 7">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <state key="selected" backgroundImage="bg_choose_weekday"/>
+                                            <state key="selected" backgroundImage="bg_choose_weekday">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                     <real key="value" value="3"/>
@@ -230,13 +241,15 @@
                                                 <action selector="btnWeekdayClick:" destination="-1" eventType="touchUpInside" id="JFI-Qk-Wfa"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ge4-Tg-ZrL">
+                                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ge4-Tg-ZrL">
                                             <rect key="frame" x="304.5" y="0.0" width="50.5" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <state key="normal" title="Chủ nhật">
                                                 <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <state key="selected" backgroundImage="bg_choose_weekday"/>
+                                            <state key="selected" backgroundImage="bg_choose_weekday">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                     <real key="value" value="3"/>
@@ -284,21 +297,25 @@
                                         <constraint firstItem="wzo-4Q-L2x" firstAttribute="top" secondItem="qhG-ai-GrP" secondAttribute="top" id="ynU-sp-Ftr"/>
                                     </constraints>
                                 </view>
-                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PAc-Wc-mV5">
-                                    <rect key="frame" x="0.0" y="366" width="375" height="100"/>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PAc-Wc-mV5">
+                                    <rect key="frame" x="10" y="376" width="355" height="100"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="GGz-xa-lRf"/>
                                     </constraints>
-                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2tb-Hp-OvN">
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="2" id="2tb-Hp-OvN">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </collectionViewFlowLayout>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="3c6-Kh-nSW"/>
+                                        <outlet property="delegate" destination="-1" id="BrR-ex-pJV"/>
+                                    </connections>
                                 </collectionView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByT-3E-ahC">
-                                    <rect key="frame" x="144" y="501" width="88" height="30"/>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByT-3E-ahC">
+                                    <rect key="frame" x="144" y="511" width="88" height="30"/>
                                     <color key="backgroundColor" red="0.13725490196078433" green="0.65490196078431373" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="88" id="iDt-oQ-3V2"/>
@@ -320,18 +337,20 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="Yc9-kT-bIF" firstAttribute="top" secondItem="SI2-Ux-tOt" secondAttribute="bottom" id="1eO-rF-4sg"/>
-                                <constraint firstItem="PAc-Wc-mV5" firstAttribute="top" secondItem="qhG-ai-GrP" secondAttribute="bottom" id="1ns-fe-WHq"/>
+                                <constraint firstItem="PAc-Wc-mV5" firstAttribute="top" secondItem="qhG-ai-GrP" secondAttribute="bottom" constant="10" id="1ns-fe-WHq"/>
                                 <constraint firstAttribute="trailing" secondItem="Yc9-kT-bIF" secondAttribute="trailing" id="6TH-pP-Okz"/>
-                                <constraint firstItem="PAc-Wc-mV5" firstAttribute="leading" secondItem="26R-z6-Zrf" secondAttribute="leading" id="HPw-Ve-q2E"/>
+                                <constraint firstItem="PAc-Wc-mV5" firstAttribute="leading" secondItem="26R-z6-Zrf" secondAttribute="leading" constant="10" id="HPw-Ve-q2E"/>
                                 <constraint firstItem="qhG-ai-GrP" firstAttribute="top" secondItem="Yc9-kT-bIF" secondAttribute="bottom" constant="8" id="Ou7-dr-n4X"/>
                                 <constraint firstAttribute="bottom" secondItem="ByT-3E-ahC" secondAttribute="bottom" constant="20" id="V3Y-eH-nyi"/>
                                 <constraint firstItem="qhG-ai-GrP" firstAttribute="centerX" secondItem="26R-z6-Zrf" secondAttribute="centerX" id="ZXX-kc-xmn"/>
                                 <constraint firstAttribute="trailing" secondItem="SI2-Ux-tOt" secondAttribute="trailing" id="ZZ5-JH-DWn"/>
                                 <constraint firstItem="ByT-3E-ahC" firstAttribute="centerX" secondItem="26R-z6-Zrf" secondAttribute="centerX" id="br3-9t-xvM"/>
-                                <constraint firstAttribute="trailing" secondItem="PAc-Wc-mV5" secondAttribute="trailing" id="bre-vk-SCy"/>
+                                <constraint firstAttribute="trailing" secondItem="PAc-Wc-mV5" secondAttribute="trailing" constant="10" id="bre-vk-SCy"/>
                                 <constraint firstItem="SI2-Ux-tOt" firstAttribute="leading" secondItem="26R-z6-Zrf" secondAttribute="leading" id="eEp-fo-6ZX"/>
+                                <constraint firstItem="Lr3-br-x4M" firstAttribute="centerX" secondItem="26R-z6-Zrf" secondAttribute="centerX" id="eOZ-eX-A8P"/>
                                 <constraint firstItem="Yc9-kT-bIF" firstAttribute="leading" secondItem="26R-z6-Zrf" secondAttribute="leading" id="fxm-8K-diT"/>
                                 <constraint firstItem="qhG-ai-GrP" firstAttribute="leading" secondItem="26R-z6-Zrf" secondAttribute="leading" constant="10" id="g6m-iT-RjW"/>
+                                <constraint firstItem="Lr3-br-x4M" firstAttribute="bottom" secondItem="SI2-Ux-tOt" secondAttribute="bottom" id="gDP-cz-bPv"/>
                                 <constraint firstItem="ByT-3E-ahC" firstAttribute="top" secondItem="PAc-Wc-mV5" secondAttribute="bottom" constant="35" id="kVa-Kk-dXc"/>
                                 <constraint firstItem="SI2-Ux-tOt" firstAttribute="top" secondItem="26R-z6-Zrf" secondAttribute="top" id="tv8-Sv-G1F"/>
                             </constraints>
@@ -361,6 +380,5 @@
         <image name="icon_field" width="10" height="12"/>
         <image name="icon_phone" width="11" height="11"/>
         <image name="icon_rate" width="90" height="16"/>
-        <image name="img_field_1" width="375" height="200"/>
     </resources>
 </document>
