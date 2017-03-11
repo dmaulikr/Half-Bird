@@ -62,6 +62,11 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         return true;
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.dismissKeyboard()
+        return true
+    }
+    
     // MARK: - List field Delegate
     func didScrollDown() {
         UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCurlDown, animations: {
