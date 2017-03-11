@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TimeCell" customModule="Book_Phui" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="65"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shw-22-OHU" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="65"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6:00 - 8:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8cG-i1-cDu">
+                                <rect key="frame" x="15" y="8" width="170" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150k" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zty-dn-uWT">
+                                <rect key="frame" x="15" y="32" width="170" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zty-dn-uWT" secondAttribute="trailing" constant="15" id="Jev-yA-wgd"/>
+                            <constraint firstItem="zty-dn-uWT" firstAttribute="leading" secondItem="shw-22-OHU" secondAttribute="leading" constant="15" id="Q7P-Qp-q8b"/>
+                            <constraint firstItem="8cG-i1-cDu" firstAttribute="leading" secondItem="shw-22-OHU" secondAttribute="leading" constant="15" id="U47-gb-nZ1"/>
+                            <constraint firstItem="8cG-i1-cDu" firstAttribute="top" secondItem="shw-22-OHU" secondAttribute="top" constant="8" id="XGy-Km-Wqv"/>
+                            <constraint firstItem="zty-dn-uWT" firstAttribute="top" secondItem="8cG-i1-cDu" secondAttribute="bottom" constant="8" id="d4J-bS-W8X"/>
+                            <constraint firstAttribute="trailing" secondItem="8cG-i1-cDu" secondAttribute="trailing" constant="15" id="gb4-wp-qtl"/>
+                            <constraint firstItem="8cG-i1-cDu" firstAttribute="centerX" secondItem="shw-22-OHU" secondAttribute="centerX" id="mE4-5k-ihv"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="shw-22-OHU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Dpi-Z2-zfs"/>
+                <constraint firstItem="shw-22-OHU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IeC-MH-Cxv"/>
+                <constraint firstAttribute="bottom" secondItem="shw-22-OHU" secondAttribute="bottom" id="JBF-xf-Drx"/>
+                <constraint firstItem="zty-dn-uWT" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="K2f-dT-oSy"/>
+                <constraint firstAttribute="trailing" secondItem="shw-22-OHU" secondAttribute="trailing" id="bRy-Ov-KlR"/>
+            </constraints>
+        </collectionViewCell>
+    </objects>
+</document>
