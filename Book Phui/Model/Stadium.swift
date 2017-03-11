@@ -10,6 +10,7 @@ import Foundation
 import EVReflection
 
 class Stadium: EVObject {
+    var id: Int = 0
     var thumbnailUrl: String?
     var name: String?
     var address: String?
