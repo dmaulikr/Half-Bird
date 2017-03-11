@@ -23,7 +23,8 @@ class SideMenuViewController: UIViewController {
 
     let contents: [Content] = [
         Content(title: "Sân bóng đã đặt", imageName: "stadiumIcon"),
-        Content(title: "Voucher", imageName: "voucherIcon"),
+        Content(title: "Sự kiện, giải đấu", imageName: "eventIcon"),
+        Content(title: "Khuyến mãi", imageName: "voucherIcon"),
         Content(title: "Phương thức thanh toán", imageName: "paymentIcon"),
         Content(title: "Cài đặt", imageName: "settingIcon"),
         Content(title: "Đăng xuất", imageName: "logoutIcon")
@@ -68,6 +69,8 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
+            let vc = UIViewController(nibName: String(describing: HistoryViewController.self), bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
             break
         case 1:
             break
@@ -76,6 +79,8 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource {
         case 3:
             break
         case 4:
+            break
+        case 5:
             break
         default:
             break
