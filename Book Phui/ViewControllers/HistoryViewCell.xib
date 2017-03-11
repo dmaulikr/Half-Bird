@@ -70,13 +70,23 @@
                             <constraint firstItem="IRH-jG-aCi" firstAttribute="top" secondItem="IMq-f9-4hb" secondAttribute="top" id="xk5-dL-uaM"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8r-k5-nK5">
+                        <rect key="frame" x="15" y="68.5" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1wy-yn-1pW"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="IMq-f9-4hb" secondAttribute="trailing" constant="15" id="3j0-dq-xHc"/>
                     <constraint firstItem="IMq-f9-4hb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MvC-p0-4Va"/>
                     <constraint firstItem="Otf-9l-jKP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SRw-bm-iDp"/>
+                    <constraint firstItem="g8r-k5-nK5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="V28-HK-cK6"/>
                     <constraint firstItem="IMq-f9-4hb" firstAttribute="leading" secondItem="Otf-9l-jKP" secondAttribute="trailing" constant="15" id="c5p-RS-HSr"/>
+                    <constraint firstAttribute="bottom" secondItem="g8r-k5-nK5" secondAttribute="bottom" id="j4a-ed-i0z"/>
                     <constraint firstItem="Otf-9l-jKP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="nyg-Tg-zqW"/>
+                    <constraint firstItem="g8r-k5-nK5" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="oYu-lW-ATb"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
