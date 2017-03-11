@@ -21,6 +21,7 @@
 		27C8CBC21E73AAF600FBFB4C /* HistoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBC01E73AAF600FBFB4C /* HistoryViewCell.swift */; };
 		27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C8CBC11E73AAF600FBFB4C /* HistoryViewCell.xib */; };
 		27C8CBC51E73B03100FBFB4C /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C8CBC41E73B03100FBFB4C /* DateHelper.swift */; };
+		27DFEACC1E73CAF60000B782 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEACB1E73CAF60000B782 /* Util.swift */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
 		5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4414D71E739F0000015F1C /* FieldDetailVC.swift */; };
 		5F4414DA1E739F0000015F1C /* FieldDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4414D81E739F0000015F1C /* FieldDetailVC.xib */; };
@@ -54,6 +55,7 @@
 		27C8CBC01E73AAF600FBFB4C /* HistoryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewCell.swift; sourceTree = "<group>"; };
 		27C8CBC11E73AAF600FBFB4C /* HistoryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewCell.xib; sourceTree = "<group>"; };
 		27C8CBC41E73B03100FBFB4C /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		27DFEACB1E73CAF60000B782 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
 		5F4414D71E739F0000015F1C /* FieldDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldDetailVC.swift; sourceTree = "<group>"; };
 		5F4414D81E739F0000015F1C /* FieldDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldDetailVC.xib; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 				FF23AB4C1E6FE16D002E30AA /* Constants.swift */,
 				27C8CBAA1E72E5B000FBFB4C /* UIAvatar.swift */,
 				27C8CBAC1E72E5B800FBFB4C /* UIView_Borders.swift */,
+				27DFEACB1E73CAF60000B782 /* Util.swift */,
 				FF23AB2C1E6FC332002E30AA /* Common */,
 			);
 			path = Helper;
@@ -389,6 +392,7 @@
 				27C8CBC21E73AAF600FBFB4C /* HistoryViewCell.swift in Sources */,
 				FFAC55241E71079A0014B755 /* LoginViewController.swift in Sources */,
 				FF23AB4D1E6FE16D002E30AA /* Constants.swift in Sources */,
+				27DFEACC1E73CAF60000B782 /* Util.swift in Sources */,
 				27C8CBBD1E73AA4800FBFB4C /* Transaction.swift in Sources */,
 				27C8CBAD1E72E5B800FBFB4C /* UIView_Borders.swift in Sources */,
 				27C8CBC51E73B03100FBFB4C /* DateHelper.swift in Sources */,
