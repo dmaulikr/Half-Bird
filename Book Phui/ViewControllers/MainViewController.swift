@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import GoogleSignIn
 
-class MainViewController: UIViewController {
+class MainViewController: AppViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
