@@ -39,6 +39,29 @@
                             <constraint firstAttribute="height" constant="1" id="r7X-o7-DUC"/>
                         </constraints>
                     </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBa-7c-fSX">
+                        <rect key="frame" x="274.5" y="17" width="30.5" height="16"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dw-GN-8EF">
+                                <rect key="frame" x="9" y="1.5" width="12.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.65490196078431373" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3dw-GN-8EF" firstAttribute="centerY" secondItem="cBa-7c-fSX" secondAttribute="centerY" id="5Zn-SZ-4Ke"/>
+                            <constraint firstAttribute="height" constant="16" id="J8r-fa-gAI"/>
+                            <constraint firstItem="3dw-GN-8EF" firstAttribute="centerX" secondItem="cBa-7c-fSX" secondAttribute="centerX" id="dwu-N4-wHp"/>
+                            <constraint firstItem="3dw-GN-8EF" firstAttribute="leading" secondItem="cBa-7c-fSX" secondAttribute="leading" constant="9" id="gmB-D6-wlB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="5Nz-XH-nOS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="5gN-xv-n4e"/>
@@ -46,6 +69,8 @@
                     <constraint firstItem="MDg-Im-6Ww" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BqZ-3Z-etP"/>
                     <constraint firstAttribute="bottom" secondItem="xjk-gd-niz" secondAttribute="bottom" id="K84-Mx-2OR"/>
                     <constraint firstItem="xjk-gd-niz" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LRn-v3-GPO"/>
+                    <constraint firstAttribute="trailing" secondItem="cBa-7c-fSX" secondAttribute="trailing" constant="15" id="d4C-Dl-k9k"/>
+                    <constraint firstItem="cBa-7c-fSX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="plk-qE-KTr"/>
                     <constraint firstItem="MDg-Im-6Ww" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tKk-g2-MUv"/>
                     <constraint firstItem="xjk-gd-niz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="uuW-tt-pDB"/>
                     <constraint firstAttribute="trailing" secondItem="5Nz-XH-nOS" secondAttribute="trailing" constant="15" id="yP6-ma-SoE"/>
@@ -53,7 +78,9 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="iconImage" destination="MDg-Im-6Ww" id="81I-sB-IF8"/>
+                <outlet property="lbNumberNoti" destination="3dw-GN-8EF" id="0Sr-KX-2MR"/>
                 <outlet property="lbTitle" destination="5Nz-XH-nOS" id="f77-uk-Kyy"/>
+                <outlet property="notificationIndicator" destination="cBa-7c-fSX" id="4MH-nX-PNO"/>
             </connections>
             <point key="canvasLocation" x="25" y="-42"/>
         </tableViewCell>

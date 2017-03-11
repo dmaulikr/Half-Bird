@@ -59,6 +59,7 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.lbTitle.text = contents[indexPath.row].title
         cell.iconImage.image = UIImage(named: contents[indexPath.row].imageName)
+        cell.notificationIndicator.isHidden = indexPath.row != 1
         
         return cell
     }
