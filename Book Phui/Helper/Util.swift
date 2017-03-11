@@ -24,7 +24,8 @@ class Util {
     }
     
     static func readFile(name: String, type: String = "") -> Data? {
-        if let filepath = Bundle.main.path(forResource: name, ofType: type), let url = URL(string: filepath){
+        if let url = Bundle.main.url(forResource: name, withExtension: type) {
+            
             let data = try? Data(contentsOf: url)
             return data
         } else {
