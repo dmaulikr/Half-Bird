@@ -42,4 +42,6 @@ class Stadium: EVObject {
         0,
         0,
     ]
+    
+    static let services: [String] = ["Bóng", "Áo tập", "Cáng", "Nước", "Giày", "Đội cổ vũ"]
 }

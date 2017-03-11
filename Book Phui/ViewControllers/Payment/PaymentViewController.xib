@@ -11,6 +11,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentViewController" customModule="Book_Phui" customModuleProvider="target">
             <connections>
+                <outlet property="lbAddress" destination="ea1-bC-lSS" id="Nmy-wG-gso"/>
+                <outlet property="lbDay" destination="n7C-bS-wn5" id="dUL-0f-VFQ"/>
+                <outlet property="lbFields" destination="gdA-8z-ysx" id="IUr-Ha-71p"/>
+                <outlet property="lbMonth" destination="fGe-AC-PWu" id="t3H-JX-3N3"/>
+                <outlet property="lbPeriodTime" destination="47x-o9-Qne" id="FCi-7e-jRV"/>
+                <outlet property="lbPhone" destination="SdJ-Rb-QUK" id="1Ry-tO-flx"/>
+                <outlet property="lbStName" destination="Cyl-FY-eIB" id="RDp-q3-LSD"/>
+                <outlet property="serviceCollectionView" destination="CkE-c7-6JV" id="gfe-PY-JpI"/>
+                <outlet property="tfCardSerie" destination="u7c-4X-3te" id="TD0-qv-gvA"/>
+                <outlet property="tfMobileCode" destination="FIZ-qM-e8c" id="yBV-mW-RJk"/>
+                <outlet property="tvNoteForOwner" destination="zsk-LO-i1K" id="Q6Y-ux-2ff"/>
                 <outlet property="view" destination="8wd-sU-T0b" id="Jv6-Kz-gCI"/>
             </connections>
         </placeholder>
@@ -53,8 +64,8 @@
                                     <rect key="frame" x="5.5" y="15" width="79" height="80"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-bS-wn5">
-                                    <rect key="frame" x="17" y="17" width="56" height="75"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="62.700000762939453"/>
+                                    <rect key="frame" x="12.5" y="18.5" width="65.5" height="72.5"/>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="62.700000762939453"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -64,12 +75,20 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tháng 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGe-AC-PWu">
+                                    <rect key="frame" x="27.5" y="79.5" width="35" height="10.5"/>
+                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="9"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="47x-o9-Qne" firstAttribute="leading" secondItem="ZtU-Hw-kbQ" secondAttribute="leading" id="5MU-JY-iCc"/>
                                 <constraint firstItem="n7C-bS-wn5" firstAttribute="centerX" secondItem="44n-Au-ckr" secondAttribute="centerX" id="EPX-j2-nIg"/>
                                 <constraint firstItem="44n-Au-ckr" firstAttribute="centerX" secondItem="ZtU-Hw-kbQ" secondAttribute="centerX" id="Lb0-VH-wTX"/>
+                                <constraint firstItem="fGe-AC-PWu" firstAttribute="bottom" secondItem="44n-Au-ckr" secondAttribute="bottom" constant="-5" id="MDd-9W-SPT"/>
                                 <constraint firstItem="n7C-bS-wn5" firstAttribute="centerY" secondItem="44n-Au-ckr" secondAttribute="centerY" id="Reh-DN-DiL"/>
+                                <constraint firstItem="fGe-AC-PWu" firstAttribute="centerX" secondItem="ZtU-Hw-kbQ" secondAttribute="centerX" id="bZi-7r-kF4"/>
                                 <constraint firstItem="44n-Au-ckr" firstAttribute="top" secondItem="ZtU-Hw-kbQ" secondAttribute="top" constant="15" id="bhY-rD-p3e"/>
                                 <constraint firstItem="44n-Au-ckr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZtU-Hw-kbQ" secondAttribute="leading" id="mai-co-qaM"/>
                                 <constraint firstItem="47x-o9-Qne" firstAttribute="top" secondItem="44n-Au-ckr" secondAttribute="bottom" constant="4" id="q5j-Az-SNo"/>
@@ -294,6 +313,9 @@
                             <real key="value" value="3"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnPurchaseClicked:" destination="-1" eventType="touchUpInside" id="fQU-eu-vgm"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
