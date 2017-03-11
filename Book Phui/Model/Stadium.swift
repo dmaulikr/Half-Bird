@@ -9,6 +9,7 @@
 import Foundation
 
 class Stadium: NSObject {
+    var thumbnailUrl: String?
     var name: String?
     var address: String?
     var opennedTime: String?
