@@ -16,6 +16,8 @@ class Stadium: NSObject {
     var closedTime: String?
     var rating: Double = 0
     var numberOfSubYards: Int = 0
+    var lat: Double = 0
+    var long: Double = 0
     
     static var periodOfTime: [String] = [
         "06:00-08:00",

@@ -52,7 +52,9 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
     }
     
     @IBAction func btnLoginFBClick(_ sender: Any) {
+        //TODO : show loading
         self.btnFBLogin.sendActions(for: .touchUpInside)
+        
     }
 
     @IBAction func btnLoginGGClick(_ sender: Any) {
