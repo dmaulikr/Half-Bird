@@ -11,15 +11,22 @@ import FirebaseAuth
 import GoogleSignIn
 import GoogleMaps
 import SideMenu
+import ActionSheetPicker_3_0
 
 class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var listView: UIView!
+    @IBOutlet weak var contraintTimeFilerHeigh: NSLayoutConstraint!
     @IBOutlet weak var contraintTableTop: NSLayoutConstraint!
     @IBOutlet weak var mapView: UIView!
     @IBOutlet weak var tfSearch: UITextField!
+    
+    @IBOutlet weak var btnTimeSearch: UIButton!
     var map : GMSMapView!
     var listFieldVC : ListFieldViewController!
+    var stadiums: [Stadium] = []
+    var markers: [GMSMarker] = []
+    var periodOfTime = Stadium.periodOfTime
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +38,30 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         self.listFieldVC.view.frame = self.listView.bounds
         self.listView.addSubview(self.listFieldVC.view)
         self.listFieldVC.delegate = self
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-//        self.view.addGestureRecognizer(tap)
+//        self.btnTimeSearch.setTitle(periodOfTime[6], for: .normal)
         self.tfSearch.delegate = self
-        // Do any additional setup after loading the view.
+        self.tfSearch.superview?.superview?.clipsToBounds = true
+        self.btnTimeSearch.superview?.superview?.clipsToBounds = true
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func getData() {
+        
+    }
+    
+    func updateData() {
+        self.getData()
+        self.clearMarker()
+        for stadium in stadiums {
+            let position = CLLocationCoordinate2D(latitude: stadium.lat, longitude: stadium.lng)
+            let marker = GMSMarker(position: position)
+            marker.title = stadium.name
+            marker.map = self.map
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,31 +72,32 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
     @IBAction func logout(_ sender: Any) {
         let firebaseAuth = FIRAuth.auth()
         try! firebaseAuth?.signOut()
-        
     }
     
     // MARK: - Textfield delegate
-    func dismissKeyboard() {
-        self.tfSearch.resignFirstResponder()
+    func didTapTimeSearch() {
+        
     }
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         self.didScrollDown()
+        
         return true;
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.dismissKeyboard()
+        self.tfSearch.resignFirstResponder()
         return true
     }
     
     // MARK: - List field Delegate
     func didScrollDown() {
         UIView.animate(withDuration: 0.5, delay: 0, options: .transitionCurlDown, animations: {
-            
-            self.contraintTableTop.constant = 250;
+            self.contraintTimeFilerHeigh.constant = 50;
+            self.contraintTableTop.constant = 220;
             self.view.layoutIfNeeded()
         }, completion: { finished in
+            
         })
     }
     
@@ -82,7 +106,9 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
             
             self.contraintTableTop.constant = 0;
             self.view.layoutIfNeeded()
+            self.contraintTimeFilerHeigh.constant = 0;
         }, completion: { finished in
+            
         })
     }
     
@@ -127,10 +153,29 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         self.mapView.addConstraint(NSLayoutConstraint(item: map, attribute: .height, relatedBy: .equal, toItem: self.mapView, attribute: .height, multiplier: 1, constant: 0))
     }
     
+    func clearMarker() {
+        for marker in markers {
+            marker.map = nil
+        }
+    }
+    
+    
+    // Mark: - Action
     @IBAction func btnMenuClick(_ sender: Any) {
         
         self.present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
     }
+    
+    @IBAction func btnTimeSeachClick(_ sender: Any) {
+        
+        let window = UIApplication.shared.keyWindow
+        ActionSheetStringPicker.show(withTitle: "Khung giờ", rows: Stadium.periodOfTime, initialSelection: 0, doneBlock: {
+            [unowned self] picker, index, value in
+            
+            self.btnTimeSearch .setTitle(self.periodOfTime[index], for: .normal)
+            }, cancel: nil, origin: window)
+    }
+    // MARK: - Action
     
     /*
     // MARK: - Navigation

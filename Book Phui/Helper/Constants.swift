@@ -31,6 +31,7 @@ struct Constants {
         static let ListFieldViewControllerID = "ListFieldViewController"
         static let FieldCellID = "FieldCell"
         static let TimeCellID = "TimeCell"
+        static let StadiumViewCellID = "StadiumViewCell"
     }
     
     struct ConstantsString {

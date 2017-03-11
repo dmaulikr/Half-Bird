@@ -64,7 +64,6 @@ extension SearchingViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! StadiumViewCell
         let item = stadiums[indexPath.row]
         cell.config(with: item)
-        
         return cell
     }
 }
