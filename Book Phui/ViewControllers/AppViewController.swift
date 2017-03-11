@@ -12,7 +12,7 @@ import SideMenu
 class AppViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.edgesForExtendedLayout = UIRectEdge.init(rawValue: 0)
         self.configSideMenu()
     }
     
