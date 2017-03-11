@@ -11,7 +11,7 @@ import UIKit
 protocol ListFieldDelegate {
     func didScrollUp()
     func didScrollDown()
-    func didSelectItem()
+    func didSelectItem(stadium:Stadium)
 }
 
 class ListFieldViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -54,7 +54,7 @@ class ListFieldViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.delegate.didSelectItem()
+        self.delegate.didSelectItem(stadiums[indexPath.row])
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

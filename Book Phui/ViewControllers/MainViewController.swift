@@ -60,7 +60,9 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
                 let position = CLLocationCoordinate2D(latitude: stadium.lat, longitude: stadium.lng)
                 let marker = GMSMarker(position: position)
                 marker.title = stadium.name
+                marker.icon = UIImage(named: "marker")
                 marker.map = self.map
+                
             }
             self.listFieldVC.updateData(arrStadium: stadiums)
         }
@@ -114,8 +116,9 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         })
     }
     
-    func didSelectItem() {
+    func didSelectItem(stadium:Stadium) {
         let vc = FieldDetailVC(nibName: "FieldDetailVC", bundle: nil)
+        
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
