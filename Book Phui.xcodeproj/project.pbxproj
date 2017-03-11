@@ -26,6 +26,8 @@
 		27DFEAD11E73CF7A0000B782 /* BookingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEACF1E73CF7A0000B782 /* BookingViewController.xib */; };
 		27DFEAD51E73D2540000B782 /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAD31E73D2540000B782 /* SearchingViewController.swift */; };
 		27DFEAD61E73D2540000B782 /* SearchingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAD41E73D2540000B782 /* SearchingViewController.xib */; };
+		27DFEAD91E73E23B0000B782 /* StadiumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */; };
+		27DFEADA1E73E23B0000B782 /* StadiumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAD81E73E23B0000B782 /* StadiumViewCell.xib */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
 		403F596C1E73CEDF00277908 /* FieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F59691E73CEDF00277908 /* FieldCell.swift */; };
 		403F596D1E73CEDF00277908 /* FieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403F596A1E73CEDF00277908 /* FieldCell.xib */; };
@@ -68,6 +70,8 @@
 		27DFEACF1E73CF7A0000B782 /* BookingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingViewController.xib; sourceTree = "<group>"; };
 		27DFEAD31E73D2540000B782 /* SearchingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; };
 		27DFEAD41E73D2540000B782 /* SearchingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchingViewController.xib; sourceTree = "<group>"; };
+		27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StadiumViewCell.swift; sourceTree = "<group>"; };
+		27DFEAD81E73E23B0000B782 /* StadiumViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StadiumViewCell.xib; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
 		403F59691E73CEDF00277908 /* FieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldCell.swift; sourceTree = "<group>"; };
 		403F596A1E73CEDF00277908 /* FieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldCell.xib; sourceTree = "<group>"; };
@@ -166,10 +170,12 @@
 			children = (
 				27DFEAD31E73D2540000B782 /* SearchingViewController.swift */,
 				27DFEAD41E73D2540000B782 /* SearchingViewController.xib */,
+				27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */,
+				27DFEAD81E73E23B0000B782 /* StadiumViewCell.xib */,
 			);
-            path = Search;
-            sourceTree = "<group>";
-        };
+			path = Search;
+			sourceTree = "<group>";
+		};
 		403F59681E73CEDF00277908 /* FieldCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,7 +342,7 @@
 				TargetAttributes = {
 					FF23AB0B1E6FB7F4002E30AA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Q34VKJFVAS;
+						DevelopmentTeam = 556LZQ7WUH;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -369,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27DFEADA1E73E23B0000B782 /* StadiumViewCell.xib in Resources */,
 				FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */,
 				FFAC552A1E710EC60014B755 /* Main.storyboard in Resources */,
 				5F4414DA1E739F0000015F1C /* FieldDetailVC.xib in Resources */,
@@ -450,6 +457,7 @@
 				27C8CBAD1E72E5B800FBFB4C /* UIView_Borders.swift in Sources */,
 				27C8CBC51E73B03100FBFB4C /* DateHelper.swift in Sources */,
 				27C8CBB61E73A44000FBFB4C /* HistoryViewController.swift in Sources */,
+				27DFEAD91E73E23B0000B782 /* StadiumViewCell.swift in Sources */,
 				403F59701E73CF0A00277908 /* LocationManager.swift in Sources */,
 				27C8CBAB1E72E5B000FBFB4C /* UIAvatar.swift in Sources */,
 				5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */,
@@ -593,7 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Book Phui/Book Phui.entitlements";
-				DEVELOPMENT_TEAM = Q34VKJFVAS;
+				DEVELOPMENT_TEAM = 556LZQ7WUH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Book\\ Phui/Library",
@@ -618,7 +626,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Book Phui/Book Phui.entitlements";
-				DEVELOPMENT_TEAM = Q34VKJFVAS;
+				DEVELOPMENT_TEAM = 556LZQ7WUH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",

@@ -14,4 +14,5 @@ target 'Book Phui' do
   pod 'Alamofire'
   pod 'SideMenu'
   pod 'iCarousel', '~>1.8.2'
+  pod 'ActionSheetPicker-3.0'
 end
