@@ -21,7 +21,7 @@ class FieldDetailVC: UIViewController {
     }
 
     func configView() {
-        self.navigationItem.title = "Sân bóng Phạm Hùng" //ThaoTODO: Rename title
+        self.navigationItem.title = "Sân bóng Phạm Hùng A" //ThaoTODO: Rename title
         
     }
 }
