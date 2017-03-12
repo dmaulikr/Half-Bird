@@ -23,6 +23,8 @@ class FieldDetailVC: UIViewController, UICollectionViewDataSource, UICollectionV
     let today = Date()
     let formatter = DateFormatter()
     var stadium: Stadium?
+    var selectedDate = Date()
+    var selectedTime = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -116,11 +118,16 @@ class FieldDetailVC: UIViewController, UICollectionViewDataSource, UICollectionV
     
     @IBAction func btnBookClick(_ sender: Any) {
         let vc = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
+        vc.stadium = stadium
+        vc.time = selectedTime
+        vc.date = selectedDate
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     //MARK: Support method
     func doSelectWeekday(sender: UIButton) {
+        let dayText = sender.titleLabel!.text!.components(separatedBy: "\n")[1]
+        selectedDate = formatter.date(from: dayText)!
         if !sender.isSelected {
             self.deselectAllButton()
             sender.isSelected = true
@@ -176,5 +183,6 @@ class FieldDetailVC: UIViewController, UICollectionViewDataSource, UICollectionV
         }
         cell.containerView.layer.borderColor = UIColor(red: 36/255.0, green: 167/255.0, blue: 10/255.0, alpha: 1).cgColor
         cell.containerView.layer.borderWidth = 2.0;
+        selectedTime = Stadium.periodOfTime[indexPath.row]
     }
 }

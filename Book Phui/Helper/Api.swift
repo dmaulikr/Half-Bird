@@ -48,4 +48,21 @@ class Api {
             }
         }
     }
+    
+    static func getEvents(completion: @escaping ([Event]) -> Void) {
+        Util.delay(0.2) {
+            if let data = Util.readFile(name: "003", type: "json") {
+                let arrayDictRaw = try! JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [NSDictionary]
+                if let arrayDict = arrayDictRaw {
+                    var result: [Event] = []
+                    
+                    for dict in arrayDict {
+                        result.append(Event(dictionary: dict))
+                    }
+                    
+                    completion(result)
+                }
+            }
+        }
+    }
 }
