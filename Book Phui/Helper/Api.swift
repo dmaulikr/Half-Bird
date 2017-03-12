@@ -9,7 +9,7 @@
 import Foundation
 
 class Api {
-    private static var transactions: [Transaction] = []
+    private(set) static var transactions: [Transaction] = []
     static let sharedInstance = Api()
     
     static func getAroundStadiums(completion: @escaping ([Stadium]) -> Void) {

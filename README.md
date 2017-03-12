@@ -6,6 +6,7 @@ This is an application that helps parents interact with school. Note: Install po
 
 All library we use in this project:
 
+Facebook SDK: https://developers.facebook.com/docs/ios/
 FireBase: https://firebase.google.com/
 Google Maps: https://developers.google.com/maps/documentation/ios-sdk/?hl=en
 SDWebImage: https://github.com/rs/SDWebImage
