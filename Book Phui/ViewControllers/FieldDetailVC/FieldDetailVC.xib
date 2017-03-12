@@ -39,7 +39,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26R-z6-Zrf" userLabel="Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="561"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="604.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SI2-Ux-tOt" customClass="iCarousel">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
@@ -51,55 +51,56 @@
                                     <rect key="frame" x="168" y="163" width="39" height="37"/>
                                 </pageControl>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yc9-kT-bIF" userLabel="Info View">
-                                    <rect key="frame" x="0.0" y="200" width="375" height="108"/>
+                                    <rect key="frame" x="0.0" y="200" width="375" height="141.5"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sân bóng Phạm Hùng được xây dựng vào năm" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XL-E2-chB">
-                                            <rect key="frame" x="10" y="8" width="355" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XL-E2-chB">
+                                            <rect key="frame" x="10" y="8" width="355" height="50.5"/>
+                                            <string key="text">Sân bóng được thiết kế theo chuẩn châu Âu, với mặt cỏ nhân tạo theo công nghệ hiện đại nhất. Sân bóng hứa hẹn những trận cầu kinh điển.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0973565187" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GaU-BN-RbM">
-                                            <rect key="frame" x="35" y="33" width="330" height="17"/>
+                                            <rect key="frame" x="35" y="66.5" width="330" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số 2, Ngách 16, Ngõ 105 Hồ Tùng Mậu, Cầu Giấy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmy-b5-t2W">
-                                            <rect key="frame" x="35" y="58" width="330" height="17"/>
+                                            <rect key="frame" x="35" y="91.5" width="330" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 sân" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ub-OO-7Iv">
-                                            <rect key="frame" x="35" y="83" width="220" height="17"/>
+                                            <rect key="frame" x="35" y="116.5" width="220" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_phone" translatesAutoresizingMaskIntoConstraints="NO" id="AL9-YV-XN8">
-                                            <rect key="frame" x="10" y="36" width="11" height="11"/>
+                                            <rect key="frame" x="10" y="69.5" width="11" height="11"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="11" id="0tZ-GE-wb9"/>
                                                 <constraint firstAttribute="width" constant="11" id="yFF-53-Iw0"/>
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_address" translatesAutoresizingMaskIntoConstraints="NO" id="s0W-Nd-NqV">
-                                            <rect key="frame" x="11" y="60" width="9" height="12"/>
+                                            <rect key="frame" x="11" y="93.5" width="9" height="12"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="12" id="RuR-1p-duv"/>
                                                 <constraint firstAttribute="width" constant="9" id="Uyi-qY-DBu"/>
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_field" translatesAutoresizingMaskIntoConstraints="NO" id="HyX-kR-xeB">
-                                            <rect key="frame" x="11" y="85" width="10" height="12"/>
+                                            <rect key="frame" x="11" y="118.5" width="10" height="12"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="10" id="0sW-KC-UPx"/>
                                                 <constraint firstAttribute="height" constant="12" id="Fib-p5-x5a"/>
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_rate" translatesAutoresizingMaskIntoConstraints="NO" id="9IR-wM-czd">
-                                            <rect key="frame" x="275" y="84" width="90" height="16"/>
+                                            <rect key="frame" x="275" y="117.5" width="90" height="16"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="ME3-Ni-DE7"/>
                                                 <constraint firstAttribute="width" constant="90" id="wDC-Rx-h61"/>
@@ -133,7 +134,7 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhG-ai-GrP" userLabel="Weekday View">
-                                    <rect key="frame" x="10" y="316" width="355" height="50"/>
+                                    <rect key="frame" x="10" y="349.5" width="355" height="50"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzu-Md-4HB">
                                             <rect key="frame" x="0.0" y="0.0" width="50.5" height="50"/>
@@ -300,7 +301,7 @@
                                     </constraints>
                                 </view>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PAc-Wc-mV5">
-                                    <rect key="frame" x="10" y="376" width="355" height="100"/>
+                                    <rect key="frame" x="10" y="409.5" width="355" height="100"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="GGz-xa-lRf"/>
@@ -317,11 +318,11 @@
                                     </connections>
                                 </collectionView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByT-3E-ahC">
-                                    <rect key="frame" x="144" y="511" width="88" height="30"/>
+                                    <rect key="frame" x="125.5" y="544.5" width="125" height="40"/>
                                     <color key="backgroundColor" red="0.13725490196078433" green="0.65490196078431373" blue="0.035294117647058823" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="88" id="iDt-oQ-3V2"/>
-                                        <constraint firstAttribute="height" constant="30" id="iwl-vg-pHB"/>
+                                        <constraint firstAttribute="width" constant="125" id="iDt-oQ-3V2"/>
+                                        <constraint firstAttribute="height" constant="40" id="iwl-vg-pHB"/>
                                     </constraints>
                                     <state key="normal" title="ĐẶT SÂN">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
