@@ -41,6 +41,15 @@ class PaymentViewController: AppViewController {
         self.tfMobileCode.keyboardType = .numberPad
         self.tfCardSerie.clearButtonMode = .whileEditing
         self.tfMobileCode.clearButtonMode = .whileEditing
+        
+        self.lbStName.text = self.stadium?.name
+        self.lbAddress.text = self.stadium?.address
+        self.lbFields.text = "\(self.stadium!.fields) sân"
+        self.lbPeriodTime.text = self.time
+        if let date = self.date {
+            self.lbMonth.text = "Tháng \(date.month())"
+            self.lbDay.text = "\(date.day())"
+        }
     }
     
     @IBAction func btnPurchaseClicked(_ sender: UIButton) {
