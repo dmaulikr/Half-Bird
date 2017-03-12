@@ -24,6 +24,10 @@ class PaymentViewController: AppViewController {
     @IBOutlet weak var tfCardSerie: AppTextField!
     @IBOutlet weak var tfMobileCode: AppTextField!
     
+    var stadium: Stadium?
+    var time: String?
+    var date: Date?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
