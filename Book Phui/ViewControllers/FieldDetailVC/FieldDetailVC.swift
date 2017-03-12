@@ -103,7 +103,8 @@ class FieldDetailVC: UIViewController, UICollectionViewDataSource, UICollectionV
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
         let imageView = UIImageView(frame: self.slideView.frame)
-        imageView.image = UIImage(named: "img_field_1")
+        let imageName = "img_field_\(index+1)"
+        imageView.image = UIImage(named: imageName)
         return imageView
     }
     

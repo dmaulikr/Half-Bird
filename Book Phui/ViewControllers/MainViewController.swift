@@ -235,13 +235,14 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
     }
     
     
-    // Mark: - Action
+    //MARK: - Action
     @IBAction func btnMenuClick(_ sender: Any) {
         
         self.present(SideMenuManager.menuLeftNavigationController!, animated: true, completion: nil)
     }
     
     @IBAction func btnTimeSeachClick(_ sender: Any) {
+        self.tfSearch.resignFirstResponder()
         
         let window = UIApplication.shared.keyWindow
         ActionSheetStringPicker.show(withTitle: "Khung giờ", rows: Stadium.periodOfTime, initialSelection: 0, doneBlock: {
