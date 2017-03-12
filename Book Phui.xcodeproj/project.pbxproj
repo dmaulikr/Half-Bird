@@ -37,7 +37,6 @@
 		27DFEAE31E744B9D0000B782 /* AddServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAE11E744B9D0000B782 /* AddServiceCollectionViewCell.xib */; };
 		27DFEAE51E745DD20000B782 /* AppTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAE41E745DD20000B782 /* AppTextView.swift */; };
 		27DFEAE71E7468020000B782 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAE61E7468020000B782 /* AppTextField.swift */; };
-		27DFEAEB1E7492290000B782 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAEA1E7492290000B782 /* GoogleService-Info.plist */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
 		4002BCAE1E73E1EC0037B5E3 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */; };
 		4002BCAF1E73E1EC0037B5E3 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */; };
@@ -48,6 +47,7 @@
 		403F596D1E73CEDF00277908 /* FieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 403F596A1E73CEDF00277908 /* FieldCell.xib */; };
 		403F596E1E73CEDF00277908 /* ListFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F596B1E73CEDF00277908 /* ListFieldViewController.swift */; };
 		403F59701E73CF0A00277908 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F596F1E73CF0A00277908 /* LocationManager.swift */; };
+		409886FC1E74D699003B128A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 409886FB1E74D699003B128A /* GoogleService-Info.plist */; };
 		5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4414D71E739F0000015F1C /* FieldDetailVC.swift */; };
 		5F4414DA1E739F0000015F1C /* FieldDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4414D81E739F0000015F1C /* FieldDetailVC.xib */; };
 		FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */; };
@@ -95,7 +95,6 @@
 		27DFEAE11E744B9D0000B782 /* AddServiceCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddServiceCollectionViewCell.xib; sourceTree = "<group>"; };
 		27DFEAE41E745DD20000B782 /* AppTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextView.swift; sourceTree = "<group>"; };
 		27DFEAE61E7468020000B782 /* AppTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
-		27DFEAEA1E7492290000B782 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
 		4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		403F596A1E73CEDF00277908 /* FieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldCell.xib; sourceTree = "<group>"; };
 		403F596B1E73CEDF00277908 /* ListFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFieldViewController.swift; sourceTree = "<group>"; };
 		403F596F1E73CF0A00277908 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		409886FB1E74D699003B128A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5F4414D71E739F0000015F1C /* FieldDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldDetailVC.swift; sourceTree = "<group>"; };
 		5F4414D81E739F0000015F1C /* FieldDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldDetailVC.xib; sourceTree = "<group>"; };
 		9637CEA5FD37CD756EA81017 /* Pods-Book Phui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.debug.xcconfig"; sourceTree = "<group>"; };
@@ -298,7 +298,7 @@
 				FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */,
 				FF23AB161E6FB7F4002E30AA /* Assets.xcassets */,
 				FF23AB1B1E6FB7F4002E30AA /* Info.plist */,
-				27DFEAEA1E7492290000B782 /* GoogleService-Info.plist */,
+				409886FB1E74D699003B128A /* GoogleService-Info.plist */,
 			);
 			path = "Book Phui";
 			sourceTree = "<group>";
@@ -414,6 +414,9 @@
 							com.apple.Keychain = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 				};
@@ -455,7 +458,7 @@
 				27C5E42A1E74D4600037AA7E /* EventViewCell.xib in Resources */,
 				27DFEAD61E73D2540000B782 /* SearchingViewController.xib in Resources */,
 				FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */,
-				27DFEAEB1E7492290000B782 /* GoogleService-Info.plist in Resources */,
+				409886FC1E74D699003B128A /* GoogleService-Info.plist in Resources */,
 				4002BCB81E74439C0037B5E3 /* TimeCell.xib in Resources */,
 				FFAC55271E710E750014B755 /* Login.storyboard in Resources */,
 				27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */,
