@@ -191,6 +191,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
         
         let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: sideMenu)
         menuLeftNavigationController.leftSide = true
+        
+        SideMenuManager.menuRightNavigationController = nil
         SideMenuManager.menuWidth = 240
         SideMenuManager.menuBlurEffectStyle = .dark
         SideMenuManager.menuEnableSwipeGestures = false

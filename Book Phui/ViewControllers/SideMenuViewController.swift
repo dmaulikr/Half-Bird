@@ -75,8 +75,10 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
             break
         case 1:
+            let vc = EventViewController(nibName: String(describing: EventViewController.self), bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
             break
-        case 2:
+        case 2: 
             break
         case 3:
             break
