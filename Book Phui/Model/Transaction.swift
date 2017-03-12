@@ -15,4 +15,5 @@ class Transaction: EVObject {
     var stadiumId: Int = 0
     var periodOfTime: String?
     var bookedDate: Date?
+    var note: String?
 }
