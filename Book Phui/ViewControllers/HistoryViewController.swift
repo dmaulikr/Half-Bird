@@ -27,6 +27,16 @@ class HistoryViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        Api.getHistory {
+            transactions in
+            self.transactions = transactions
+            self.tableView.reloadData()
+        }
+    }
 }
 
 extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
@@ -47,13 +57,19 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 70
+    }
+    
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            
+            transactions.remove(at: indexPath.row)
+            Api.removeTransaction(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
     

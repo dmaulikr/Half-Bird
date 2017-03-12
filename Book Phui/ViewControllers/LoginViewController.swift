@@ -48,15 +48,10 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
         self.btnFBLogin.delegate = self;
         // Do any additional setup after loading the view.
         
-        self.activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: self.view.bounds.size.width/2, y: self.view.bounds.size.height/2, width: 100, height: 100))
+        self.activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: self.view.bounds.size.width/2 - 50, y: self.view.bounds.size.height/2 - 50, width: 100, height: 100))
         self.activityIndicatorView.center = self.view.center
         self.view.addSubview(self.activityIndicatorView)
 //        self.activityIndicatorView.startAnimating()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func btnLoginFBClick(_ sender: Any) {
@@ -64,7 +59,7 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
         self.btnFBLogin.sendActions(for: .touchUpInside)
         self.activityIndicatorView.startAnimating()
     }
-
+    
     @IBAction func btnLoginGGClick(_ sender: Any) {
         GIDSignIn.sharedInstance().signIn()
     }

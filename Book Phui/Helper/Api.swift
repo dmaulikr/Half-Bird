@@ -64,4 +64,12 @@ class Api {
             }
         }
     }
+    
+    static func pushTransaction(_ transaction: Transaction) {
+        transactions.append(transaction)
+    }
+    
+    static func removeTransaction(at index: Int) {
+        transactions.remove(at: index)
+    }
 }

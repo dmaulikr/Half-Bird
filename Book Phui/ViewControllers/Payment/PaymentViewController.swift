@@ -8,6 +8,8 @@
 
 import UIKit
 import TPKeyboardAvoiding
+import NVActivityIndicatorView
+import SideMenu
 
 class PaymentViewController: AppViewController {
 
@@ -23,6 +25,8 @@ class PaymentViewController: AppViewController {
     @IBOutlet weak var tvNoteForOwner: AppTextView!
     @IBOutlet weak var tfCardSerie: AppTextField!
     @IBOutlet weak var tfMobileCode: AppTextField!
+    
+    var activityIndicatorView : NVActivityIndicatorView!
     
     var stadium: Stadium?
     var time: String?
@@ -50,12 +54,35 @@ class PaymentViewController: AppViewController {
             self.lbMonth.text = "Tháng \(date.month())"
             self.lbDay.text = "\(date.day())"
         }
+        
+        self.activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), type: .pacman, color: Constants.selectedColor)
+        self.activityIndicatorView.center = CGPoint(x: self.view.bounds.width / 2 - 100, y: self.view.bounds.height / 2)
+        self.view.addSubview(self.activityIndicatorView)
     }
     
     @IBAction func btnPurchaseClicked(_ sender: UIButton) {
+        self.activityIndicatorView.startAnimating()
+        let transaction = Transaction()
+        transaction.stadium = stadium
+        transaction.bookedDate = date
+        transaction.periodOfTime = time
+        transaction.note = tvNoteForOwner.text
         
+        Api.pushTransaction(transaction)
+        
+        Util.delay(3) {
+            self.activityIndicatorView.stopAnimating()
+            for vc in self.navigationController!.viewControllers {
+                if vc is MainViewController {
+                    _ = self.navigationController?.popToViewController(vc, animated: true)
+                    vc.present(SideMenuManager.menuLeftNavigationController! , animated: true, completion: nil)
+                    
+                    break
+                }
+            }
+        }
     }
-
+    
     func dismissKeyboard() {
         self.view.endEditing(true)
     }
