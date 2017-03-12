@@ -21,7 +21,15 @@ class AddServiceCollectionViewCell: UICollectionViewCell {
     
     func selected(_ value: Bool) {
         lbTitle.textColor = value ? Constants.selectedColor : Constants.deselectedColor
-        boundView.backgroundColor = value ? Constants.selectedColor : Constants.deselectedColor
-        smallerView.backgroundColor = value ? Constants.selectedColor : Constants.deselectedColor
+        boundView.borderColor = value ? Constants.selectedColor : Constants.deselectedColor
+        if value {
+            smallerView.backgroundColor = Constants.selectedColor
+            smallerView.borderWidth = 0
+        }
+        else {
+            smallerView.borderColor = Constants.deselectedColor
+            smallerView.backgroundColor = UIColor.clear
+            smallerView.borderWidth = 1
+        }
     }
 }

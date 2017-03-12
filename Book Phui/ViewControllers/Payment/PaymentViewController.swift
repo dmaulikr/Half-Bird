@@ -31,7 +31,12 @@ class PaymentViewController: AppViewController {
         self.serviceCollectionView.register(UINib(nibName: String(describing: AddServiceCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: "Cell")
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tapGesture.delegate = self
+        self.serviceCollectionView.allowsMultipleSelection = true
         self.view.addGestureRecognizer(tapGesture)
+        self.navigationItem.title = "Đặt sân"
+        self.tfMobileCode.keyboardType = .numberPad
+        self.tfCardSerie.clearButtonMode = .whileEditing
+        self.tfMobileCode.clearButtonMode = .whileEditing
     }
     
     @IBAction func btnPurchaseClicked(_ sender: UIButton) {
@@ -46,6 +51,13 @@ class PaymentViewController: AppViewController {
 extension PaymentViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         return self.serviceCollectionView.frame.contains(touch.location(in: self.view))
+    }
+}
+
+extension PaymentViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = min(self.serviceCollectionView.frame.size.width / 3 - 10, 100)
+        return CGSize(width: width, height: 28)
     }
 }
 

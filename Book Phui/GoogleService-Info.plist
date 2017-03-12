@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>725959021461-jljon3an5i8fo0eoro5fce8j5uk9etn0.apps.googleusercontent.com</string>
+	<string>1042860803582-1qf55qqugpe6jgmidd3r1pf4nl9qvmce.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.725959021461-jljon3an5i8fo0eoro5fce8j5uk9etn0</string>
+	<string>com.googleusercontent.apps.1042860803582-1qf55qqugpe6jgmidd3r1pf4nl9qvmce</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDD5DzRGwn8Ql8tPnBRYEHS0X7rl96pK-8</string>
+	<string>AIzaSyA4UvR4QlwscY4tsr-WhxbpZ5mIIYHXPXY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>725959021461</string>
+	<string>1042860803582</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.halfbird.Book-Phui</string>
+	<string>com.halfbird.BookPhui</string>
 	<key>PROJECT_ID</key>
-	<string>book-phui</string>
+	<string>footbook-888e9</string>
 	<key>STORAGE_BUCKET</key>
-	<string>book-phui.appspot.com</string>
+	<string>footbook-888e9.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:725959021461:ios:55effe63ec4ba019</string>
+	<string>1:1042860803582:ios:abecf7d763184dfa</string>
 	<key>DATABASE_URL</key>
-	<string>https://book-phui.firebaseio.com</string>
+	<string>https://footbook-888e9.firebaseio.com</string>
 </dict>
 </plist>

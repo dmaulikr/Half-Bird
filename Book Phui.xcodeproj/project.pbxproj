@@ -27,11 +27,11 @@
 		27DFEAD91E73E23B0000B782 /* StadiumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */; };
 		27DFEADA1E73E23B0000B782 /* StadiumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAD81E73E23B0000B782 /* StadiumViewCell.xib */; };
 		27DFEADC1E7406930000B782 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEADB1E7406930000B782 /* Api.swift */; };
-		27DFEADF1E74106C0000B782 /* 001.js in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEADE1E74106C0000B782 /* 001.js */; };
 		27DFEAE21E744B9D0000B782 /* AddServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAE01E744B9D0000B782 /* AddServiceCollectionViewCell.swift */; };
 		27DFEAE31E744B9D0000B782 /* AddServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAE11E744B9D0000B782 /* AddServiceCollectionViewCell.xib */; };
 		27DFEAE51E745DD20000B782 /* AppTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAE41E745DD20000B782 /* AppTextView.swift */; };
 		27DFEAE71E7468020000B782 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DFEAE61E7468020000B782 /* AppTextField.swift */; };
+		27DFEAEB1E7492290000B782 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27DFEAEA1E7492290000B782 /* GoogleService-Info.plist */; };
 		3E9BD4AA81BB4AA7D88F9E69 /* Pods_Book_Phui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */; };
 		4002BCAE1E73E1EC0037B5E3 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */; };
 		4002BCAF1E73E1EC0037B5E3 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */; };
@@ -44,13 +44,10 @@
 		403F59701E73CF0A00277908 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403F596F1E73CF0A00277908 /* LocationManager.swift */; };
 		5F4414D91E739F0000015F1C /* FieldDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4414D71E739F0000015F1C /* FieldDetailVC.swift */; };
 		5F4414DA1E739F0000015F1C /* FieldDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F4414D81E739F0000015F1C /* FieldDetailVC.xib */; };
-		5FEB39F01E7443C700599F84 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEB39EE1E7443C700599F84 /* TimeCell.swift */; };
-		5FEB39F11E7443C700599F84 /* TimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB39EF1E7443C700599F84 /* TimeCell.xib */; };
 		FF23AB101E6FB7F4002E30AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */; };
 		FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB161E6FB7F4002E30AA /* Assets.xcassets */; };
 		FF23AB1A1E6FB7F4002E30AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB181E6FB7F4002E30AA /* LaunchScreen.storyboard */; };
 		FF23AB4D1E6FE16D002E30AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF23AB4C1E6FE16D002E30AA /* Constants.swift */; };
-		FF23AB4F1E700FFD002E30AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF23AB4E1E700FFD002E30AA /* GoogleService-Info.plist */; };
 		FFAC55241E71079A0014B755 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC55231E71079A0014B755 /* LoginViewController.swift */; };
 		FFAC55271E710E750014B755 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAC55251E710E750014B755 /* Login.storyboard */; };
 		FFAC552A1E710EC60014B755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAC55281E710EC60014B755 /* Main.storyboard */; };
@@ -82,11 +79,11 @@
 		27DFEAD71E73E23B0000B782 /* StadiumViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StadiumViewCell.swift; sourceTree = "<group>"; };
 		27DFEAD81E73E23B0000B782 /* StadiumViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StadiumViewCell.xib; sourceTree = "<group>"; };
 		27DFEADB1E7406930000B782 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		27DFEADE1E74106C0000B782 /* 001.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = 001.js; sourceTree = "<group>"; };
 		27DFEAE01E744B9D0000B782 /* AddServiceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		27DFEAE11E744B9D0000B782 /* AddServiceCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddServiceCollectionViewCell.xib; sourceTree = "<group>"; };
 		27DFEAE41E745DD20000B782 /* AppTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextView.swift; sourceTree = "<group>"; };
 		27DFEAE61E7468020000B782 /* AppTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		27DFEAEA1E7492290000B782 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3364CAB461A3E80C9830782A /* Pods-Book Phui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.release.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.release.xcconfig"; sourceTree = "<group>"; };
 		4002BCAC1E73E1EC0037B5E3 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		4002BCAD1E73E1EC0037B5E3 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
@@ -99,8 +96,6 @@
 		403F596F1E73CF0A00277908 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5F4414D71E739F0000015F1C /* FieldDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldDetailVC.swift; sourceTree = "<group>"; };
 		5F4414D81E739F0000015F1C /* FieldDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FieldDetailVC.xib; sourceTree = "<group>"; };
-		5FEB39EE1E7443C700599F84 /* TimeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
-		5FEB39EF1E7443C700599F84 /* TimeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeCell.xib; sourceTree = "<group>"; };
 		9637CEA5FD37CD756EA81017 /* Pods-Book Phui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Book Phui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Book Phui/Pods-Book Phui.debug.xcconfig"; sourceTree = "<group>"; };
 		A14D4A29D2FAE6E2AFE0612F /* Pods_Book_Phui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Book_Phui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF23AB0C1E6FB7F4002E30AA /* Book Phui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book Phui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +106,6 @@
 		FF23AB271E6FC2B0002E30AA /* Bridging-Header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.pch"; sourceTree = "<group>"; };
 		FF23AB281E6FC2C7002E30AA /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		FF23AB4C1E6FE16D002E30AA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		FF23AB4E1E700FFD002E30AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FFAC55231E71079A0014B755 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFAC55261E710E750014B755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		FFAC55291E710EC60014B755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -247,15 +241,6 @@
 			path = FieldDetailVC;
 			sourceTree = "<group>";
 		};
-		5FEB39ED1E7443C700599F84 /* TimeCell */ = {
-			isa = PBXGroup;
-			children = (
-				5FEB39EE1E7443C700599F84 /* TimeCell.swift */,
-				5FEB39EF1E7443C700599F84 /* TimeCell.xib */,
-			);
-			path = TimeCell;
-			sourceTree = "<group>";
-		};
 		FF23AB031E6FB7F4002E30AA = {
 			isa = PBXGroup;
 			children = (
@@ -288,7 +273,7 @@
 				FF23AB0F1E6FB7F4002E30AA /* AppDelegate.swift */,
 				FF23AB161E6FB7F4002E30AA /* Assets.xcassets */,
 				FF23AB1B1E6FB7F4002E30AA /* Info.plist */,
-				FF23AB4E1E700FFD002E30AA /* GoogleService-Info.plist */,
+				27DFEAEA1E7492290000B782 /* GoogleService-Info.plist */,
 			);
 			path = "Book Phui";
 			sourceTree = "<group>";
@@ -397,8 +382,8 @@
 				TargetAttributes = {
 					FF23AB0B1E6FB7F4002E30AA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Q34VKJFVAS;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 556LZQ7WUH;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -439,10 +424,10 @@
 				403F596D1E73CEDF00277908 /* FieldCell.xib in Resources */,
 				27C8CBB71E73A44000FBFB4C /* HistoryViewController.xib in Resources */,
 				27C8CBA41E72E31E00FBFB4C /* SideMenuViewController.xib in Resources */,
-				FF23AB4F1E700FFD002E30AA /* GoogleService-Info.plist in Resources */,
 				4002BCB31E7438B20037B5E3 /* 001.json in Resources */,
 				27DFEAD61E73D2540000B782 /* SearchingViewController.xib in Resources */,
 				FF23AB171E6FB7F4002E30AA /* Assets.xcassets in Resources */,
+				27DFEAEB1E7492290000B782 /* GoogleService-Info.plist in Resources */,
 				4002BCB81E74439C0037B5E3 /* TimeCell.xib in Resources */,
 				FFAC55271E710E750014B755 /* Login.storyboard in Resources */,
 				27C8CBC31E73AAF600FBFB4C /* HistoryViewCell.xib in Resources */,
@@ -664,8 +649,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Book Phui/Book Phui.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = Q34VKJFVAS;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anh Son Le (JV9RZ28ZA6)";
+				DEVELOPMENT_TEAM = 556LZQ7WUH;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Book\\ Phui/Library",
@@ -676,8 +661,10 @@
 				INFOPLIST_FILE = "Book Phui/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.halfbird.Book-Phui";
+				PRODUCT_BUNDLE_IDENTIFIER = com.halfbird.BookPhui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fb4d3ce3-21ce-42ba-9ab4-68557b39aeea";
+				PROVISIONING_PROFILE_SPECIFIER = bookphui;
 				SWIFT_OBJC_BRIDGING_HEADER = "Book Phui/Application/Bridging-Header.pch";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -690,8 +677,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Book Phui/Book Phui.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = Q34VKJFVAS;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anh Son Le (JV9RZ28ZA6)";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Book\\ Phui/Library/FacebookSDKs-iOS-4.20.0",
@@ -718,8 +705,10 @@
 				INFOPLIST_FILE = "Book Phui/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.halfbird.Book-Phui";
+				PRODUCT_BUNDLE_IDENTIFIER = com.halfbird.BookPhui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fb4d3ce3-21ce-42ba-9ab4-68557b39aeea";
+				PROVISIONING_PROFILE_SPECIFIER = bookphui;
 				SWIFT_OBJC_BRIDGING_HEADER = "Book Phui/Application/Bridging-Header.pch";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

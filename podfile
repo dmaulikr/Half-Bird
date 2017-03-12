@@ -8,6 +8,7 @@ target 'Book Phui' do
   # Pods for Book Phui
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Messaging'
   pod 'GoogleSignIn'
   pod 'SDWebImage', '~>3.8'
   pod 'GoogleMaps'

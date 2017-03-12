@@ -34,7 +34,6 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
                 
             }
         }
-        self.activityIndicatorView.stopAnimating()
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
@@ -49,9 +48,10 @@ class LoginViewController: UIViewController, GIDSignInUIDelegate, FBSDKLoginButt
         self.btnFBLogin.delegate = self;
         // Do any additional setup after loading the view.
         
-        self.activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        self.activityIndicatorView = NVActivityIndicatorView(frame: CGRect(x: self.view.bounds.size.width/2, y: self.view.bounds.size.height/2, width: 100, height: 100))
+        self.activityIndicatorView.center = self.view.center
         self.view.addSubview(self.activityIndicatorView)
-        self.activityIndicatorView.startAnimating()
+//        self.activityIndicatorView.startAnimating()
     }
 
     override func didReceiveMemoryWarning() {

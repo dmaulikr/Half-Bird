@@ -10,6 +10,11 @@ import UIKit
 
 @IBDesignable
 class AppTextView: UIView {
+    @IBInspectable var leftImage: UIImage? {
+        didSet {
+            self.leftImageView.image = leftImage
+        }
+    }
     @IBInspectable var text: String! {
         set {
             self.textView.text = text
@@ -98,7 +103,7 @@ class AppTextView: UIView {
             return self.textView.typingAttributes
         }
     }
-
+    
     @IBInspectable var maxLength: Int = 0
     
     
@@ -114,9 +119,17 @@ class AppTextView: UIView {
         return view
     }()
     
+    private lazy var leftImageView: UIImageView = {
+        let view = UIImageView(image: self.leftImage)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
     weak var delegate: AppTextViewDelegate?
     
     private var underlineView: UIView!
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -129,6 +142,7 @@ class AppTextView: UIView {
     }
     
     private func initialize() {
+        self.addSubview(self.leftImageView)
         self.addSubview(self.textView)
         self.textView.delegate = self
         
@@ -140,22 +154,26 @@ class AppTextView: UIView {
     private func setupLayer() {
         underlineView = UIView()
         underlineView.translatesAutoresizingMaskIntoConstraints = false
-        underlineView.backgroundColor = Constants.deselectedBrightColor
+        underlineView.backgroundColor = Constants.deselectedColor
         self.addSubview(underlineView)
     }
     
     private func setConstraints() {
+        let topImage = NSLayoutConstraint(item: leftImageView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0)
+        let leadingImage = NSLayoutConstraint(item: leftImageView, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 0)
+        
         let topTv = NSLayoutConstraint(item: textView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0)
-        let leadingTv = NSLayoutConstraint(item: textView, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0)
+        let leadingTv = NSLayoutConstraint(item: textView, attribute: .leading, relatedBy: .equal, toItem: self.leftImageView, attribute: .trailing, multiplier: 1, constant: 0)
         let trailingTv = NSLayoutConstraint(item: textView, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0)
-        let bottomTv = NSLayoutConstraint(item: textView, attribute: .bottom, relatedBy: .equal, toItem: self.underlineView, attribute: .top, multiplier: 1, constant: 15)
+        let bottomTv = NSLayoutConstraint(item: textView, attribute: .bottom, relatedBy: .equal, toItem: self.underlineView, attribute: .top, multiplier: 1, constant: 5)
+        let equalWidth = NSLayoutConstraint(item: textView, attribute: .width, relatedBy: .equal, toItem: self, attribute: .width, multiplier: 1, constant: 0)
         
         let bottomLine = NSLayoutConstraint(item: underlineView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0)
         let heightLine = NSLayoutConstraint(item: underlineView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 1)
         let leadingLine = NSLayoutConstraint(item: underlineView, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 0)
         let trailingLine = NSLayoutConstraint(item: underlineView, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0)
         
-        self.addConstraints([leadingTv, topTv, trailingTv, bottomTv, bottomLine, heightLine, leadingLine, trailingLine])
+        self.addConstraints([topImage, leadingImage, leadingTv, topTv, trailingTv, bottomTv, bottomLine, heightLine, leadingLine, trailingLine, equalWidth])
     }
     
     @objc fileprivate func didFocus() {
@@ -195,7 +213,7 @@ extension AppTextView: UITextViewDelegate {
         self.didLoseFocus()
         self.delegate?.textViewDidEndEditing?(self)
     }
-
+    
     func textField(_ textView: UITextView, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let currentText = (textView.text ?? "") as NSString
         let updatedText = currentText.replacingCharacters(in: range, with: string)

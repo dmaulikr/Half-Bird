@@ -10,10 +10,15 @@ import UIKit
 
 @IBDesignable
 class AppTextField: UIView {
+    @IBInspectable var leftImage: UIImage? {
+        didSet {
+            self.leftImageView.image = leftImage
+        }
+    }
     
     @IBInspectable var text: String? {
         set {
-            self.textField.text = text
+            self.textField.text = newValue
         }
         get {
             return self.textField.text
@@ -22,7 +27,7 @@ class AppTextField: UIView {
     
     var attributedText: NSAttributedString?{
         set {
-            self.textField.attributedText = attributedText
+            self.textField.attributedText = newValue
         }
         get {
             return self.textField.attributedText
@@ -31,7 +36,7 @@ class AppTextField: UIView {
     
     @IBInspectable var textColor: UIColor? {
         set {
-            self.textField.textColor = textColor
+            self.textField.textColor = newValue
         }
         get {
             return self.textField.textColor
@@ -40,7 +45,7 @@ class AppTextField: UIView {
     
     @IBInspectable var font: UIFont? {
         set {
-            self.textField.font = font
+            self.textField.font = newValue
         }
         get {
             return self.textField.font
@@ -49,7 +54,7 @@ class AppTextField: UIView {
     
     @IBInspectable var textAlignment: NSTextAlignment {
         set {
-            self.textField.textAlignment = textAlignment
+            self.textField.textAlignment = newValue
         }
         get {
             return self.textField.textAlignment
@@ -58,7 +63,7 @@ class AppTextField: UIView {
     
     @IBInspectable var defaultTextAttributes: [String : Any] {
         set {
-            self.textField.defaultTextAttributes = defaultTextAttributes
+            self.textField.defaultTextAttributes = newValue
         }
         get {
             return self.textField.defaultTextAttributes
@@ -68,7 +73,7 @@ class AppTextField: UIView {
     
     @IBInspectable var placeholder: String? {
         set {
-            self.textField.placeholder = placeholder
+            self.textField.placeholder = newValue
         }
         get {
             return self.textField.placeholder
@@ -77,7 +82,7 @@ class AppTextField: UIView {
     
     var attributedPlaceholder: NSAttributedString? {
         set {
-            self.textField.attributedPlaceholder = attributedPlaceholder
+            self.textField.attributedPlaceholder = newValue
         }
         get {
             return self.textField.attributedPlaceholder
@@ -86,7 +91,7 @@ class AppTextField: UIView {
     
     @IBInspectable var clearsOnBeginEditing: Bool {
         set {
-            self.textField.clearsOnBeginEditing = clearsOnBeginEditing
+            self.textField.clearsOnBeginEditing = newValue
         }
         get {
             return self.textField.clearsOnBeginEditing
@@ -95,7 +100,7 @@ class AppTextField: UIView {
     
     @IBInspectable var adjustsFontSizeToFitWidth: Bool {
         set {
-            self.textField.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth
+            self.textField.adjustsFontSizeToFitWidth = newValue
         }
         get {
             return self.textField.adjustsFontSizeToFitWidth
@@ -104,7 +109,7 @@ class AppTextField: UIView {
     
     @IBInspectable var minimumFontSize: CGFloat {
         set {
-            self.textField.minimumFontSize = minimumFontSize
+            self.textField.minimumFontSize = newValue
         }
         get {
             return self.textField.minimumFontSize
@@ -113,7 +118,7 @@ class AppTextField: UIView {
     
     @IBInspectable var background: UIImage? {
         set {
-            self.textField.background = background
+            self.textField.background = newValue
         }
         get {
             return self.textField.background
@@ -122,7 +127,7 @@ class AppTextField: UIView {
     
     @IBInspectable var disabledBackground: UIImage? {
         set {
-            self.textField.disabledBackground = disabledBackground
+            self.textField.disabledBackground = newValue
         }
         get {
             return self.textField.disabledBackground
@@ -138,7 +143,7 @@ class AppTextField: UIView {
     
     @IBInspectable var allowsEditingTextAttributes: Bool {
         set {
-            self.textField.allowsEditingTextAttributes = allowsEditingTextAttributes
+            self.textField.allowsEditingTextAttributes = newValue
         }
         get {
             return self.textField.allowsEditingTextAttributes
@@ -147,7 +152,7 @@ class AppTextField: UIView {
     
     @IBInspectable var typingAttributes: [String : Any]? {
         set {
-            self.textField.typingAttributes = typingAttributes
+            self.textField.typingAttributes = newValue
         }
         get {
             return self.textField.typingAttributes
@@ -156,10 +161,19 @@ class AppTextField: UIView {
     
     @IBInspectable var clearButtonMode: UITextFieldViewMode {
         set {
-            self.textField.clearButtonMode = clearButtonMode
+            self.textField.clearButtonMode = newValue
         }
         get {
             return self.textField.clearButtonMode
+        }
+    }
+    
+    @IBInspectable var keyboardType: UIKeyboardType {
+        set {
+            self.textField.keyboardType = newValue
+        }
+        get {
+            return self.textField.keyboardType
         }
     }
     
@@ -177,7 +191,19 @@ class AppTextField: UIView {
         return view
     }()
     
+    private lazy var leftImageView: UIImageView = {
+        let view = UIImageView(image: self.leftImage)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.setContentHuggingPriority(1000, for: .vertical)
+        
+        return view
+    }()
+    
     weak var delegate: AppTextFieldDelegate?
+    
+    private let startPoint = CGPoint(x: 0.0, y: 0.5)
+    private let endPoint = CGPoint(x: 1.0, y: 0.5)
+    
     private var underlineView: UIView!
     
     override init(frame: CGRect) {
@@ -191,6 +217,7 @@ class AppTextField: UIView {
     }
     
     private func initialize() {
+        self.addSubview(self.leftImageView)
         self.addSubview(self.textField)
         self.textField.delegate = self
         setupLayer()
@@ -204,17 +231,28 @@ class AppTextField: UIView {
         underlineView.backgroundColor = Constants.deselectedColor
         self.addSubview(underlineView)
     }
-
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        print(self.textField.frame)
+    }
+    
     private func setConstraints() {
+        let topImage = NSLayoutConstraint(item: leftImageView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0)
+        let leadingImage = NSLayoutConstraint(item: leftImageView, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 0)
+        
         let topTv = NSLayoutConstraint(item: textField, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 0)
-        let leadingTv = NSLayoutConstraint(item: textField, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 15)
+        let leadingTv = NSLayoutConstraint(item: textField, attribute: .leading, relatedBy: .equal, toItem: self.leftImageView, attribute: .trailing, multiplier: 1, constant: 0)
         let trailingTv = NSLayoutConstraint(item: textField, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0)
+        let equalWidth = NSLayoutConstraint(item: textField, attribute: .width, relatedBy: .equal, toItem: self, attribute: .width, multiplier: 1, constant: 0)
         
         let bottomLine = NSLayoutConstraint(item: underlineView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: 0)
         let heightLine = NSLayoutConstraint(item: underlineView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 1)
         let leadingLine = NSLayoutConstraint(item: underlineView, attribute: .leading, relatedBy: .equal, toItem: self, attribute: .leading, multiplier: 1, constant: 0)
         let trailingLine = NSLayoutConstraint(item: underlineView, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: 0)
-        self.addConstraints([leadingTv, topTv, trailingTv, bottomLine, heightLine, leadingLine, trailingLine])
+        
+        self.addConstraints([topImage, leadingImage, leadingTv, topTv, trailingTv, bottomLine, heightLine, leadingLine, trailingLine, equalWidth])
     }
     
     @objc fileprivate func didFocus() {
@@ -227,6 +265,10 @@ class AppTextField: UIView {
         UIView.animate(withDuration: 0.2) {
             self.underlineView.backgroundColor = Constants.deselectedColor
         }
+    }
+    
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: self.leftImageHorizontalPadding + self.leftImageView.bounds.width + self.textField.bounds.width + self.horizontalSpacing, height: self.leftImageView.bounds.width + self.verticalSpacing + self.underlineView.bounds.height)
     }
 }
 
