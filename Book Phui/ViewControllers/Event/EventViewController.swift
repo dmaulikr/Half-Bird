@@ -22,7 +22,7 @@ class EventViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.title = "Sự kiện"
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         

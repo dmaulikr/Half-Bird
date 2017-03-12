@@ -33,6 +33,10 @@ class EventViewCell: UITableViewCell {
     @IBAction func btnShareGoogleClicked(_ sender: UIButton) {
     }
     
+    @IBAction func btnJoinClicked(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+    }
+    
     func config(with event: Event) {
         if let imageUrl = event.imageUrl, let url = URL(string: imageUrl) {
             bigImageView.sd_setImage(with: url)
