@@ -34,6 +34,7 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
     var markers: [GMSMarker] = []
     var periodOfTime = Stadium.periodOfTime
     var indexSelected: Int = -1
+    var indexSelectedTime: Int = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +46,7 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         self.listFieldVC.view.frame = self.listView.bounds
         self.listView.addSubview(self.listFieldVC.view)
         self.listFieldVC.delegate = self
-//        self.btnTimeSearch.setTitle(periodOfTime[6], for: .normal)
+
         self.tfSearch.delegate = self
         self.tfSearch.superview?.superview?.clipsToBounds = true
         self.btnTimeSearch.superview?.superview?.clipsToBounds = true
@@ -57,8 +58,25 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
-    func getData() {
-        
+    func search() {
+        var arrTemp = self.stadiums
+        if indexSelectedTime != -1 {
+            for _ in 0...2 {
+                arrTemp.remove(at: 0)
+                
+            }
+        }
+        self.listFieldVC.updateData(arrStadium: arrTemp)
+        self.clearMarker()
+        for stadium in arrTemp {
+            let position = CLLocationCoordinate2D(latitude: stadium.lat, longitude: stadium.lng)
+            let marker = GMSMarker(position: position)
+            marker.title = stadium.name
+            
+            marker.icon = UIImage(named: "marker")
+            marker.map = self.map
+            self.markers.append(marker)
+        }
     }
     
     func updateData() {
@@ -102,6 +120,9 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.tfSearch.resignFirstResponder()
         return true
+    }
+    @IBAction func tfSearchValueChange(_ sender: Any) {
+        self.search()
     }
     
     // MARK: - List field Delegate
@@ -159,8 +180,6 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         self.hideDetailView()
     }
-    
-    
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
         
@@ -229,6 +248,8 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
             [unowned self] picker, index, value in
             
             self.btnTimeSearch .setTitle(self.periodOfTime[index], for: .normal)
+            self.indexSelectedTime = index
+            self.search()
             }, cancel: nil, origin: window)
     }
     

@@ -78,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
                      fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
 
-        print(userInfo)
+        
         
         completionHandler(UIBackgroundFetchResult.newData)
     }
@@ -104,13 +104,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate, UNUser
         self.window?.makeKeyAndVisible()
     }
     
-    @available(iOS 10.0, *)
+    @available(iOS 10, *)
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Swift.Void) {
-        
+        print(notification.request.content.userInfo)
     }
     
 
-    @available(iOS 10.0, *)
+    @available(iOS 10, *)
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void) {
         
     }

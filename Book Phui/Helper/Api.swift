@@ -10,6 +10,7 @@ import Foundation
 
 class Api {
     private static var transactions: [Transaction] = []
+    static let sharedInstance = Api()
     
     static func getAroundStadiums(completion: @escaping ([Stadium]) -> Void) {
         Util.delay(0.2) {
