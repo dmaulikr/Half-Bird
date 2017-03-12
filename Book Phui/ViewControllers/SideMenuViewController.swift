@@ -43,6 +43,12 @@ class SideMenuViewController: UIViewController {
             biggerAvatarImage.sd_setImage(with: photoURL)
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.tableView.reloadData()
+    }
 }
 
 extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource {
@@ -59,7 +65,19 @@ extension SideMenuViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.lbTitle.text = contents[indexPath.row].title
         cell.iconImage.image = UIImage(named: contents[indexPath.row].imageName)
-        cell.notificationIndicator.isHidden = indexPath.row != 1
+        
+        switch indexPath.row {
+        case 0:
+            cell.notificationIndicator.isHidden = Api.transactions.isEmpty
+            cell.lbNumberNoti.text = "\(Api.transactions.count)"
+            break
+        case 1:
+            cell.notificationIndicator.isHidden = false
+            break
+        default:
+            cell.notificationIndicator.isHidden = true
+            break
+        }
         
         return cell
     }
