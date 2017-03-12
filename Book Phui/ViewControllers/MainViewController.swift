@@ -232,6 +232,7 @@ class MainViewController: AppViewController, GMSMapViewDelegate, ListFieldDelega
         for marker in markers {
             marker.map = nil
         }
+        markers = []
     }
     
     
